@@ -51,6 +51,7 @@ class CurrentSubMode(enum.Enum):
     FIRST_SUB_MODE = 0
     SECOND_SUB_MODE = 1
     THIRD_SUB_MODE = 2
+    FORTH_SUB_MODE = 4
 
     VIDEO = 0
     SINGLE_PIC = 0
