@@ -1,6 +1,14 @@
 import enum
 
 
+class Glue(enum.Enum):
+    @staticmethod
+    def lookup(key, value):
+        if key == Settings.VIDEO_LOW_LIGHT:
+            return VideoLowLight(value)
+
+
+@enum.unique
 class Settings(enum.Enum):
     VIDEO_SUB_MODE = 68
     VIDEO_RESOLUTION = 2
@@ -212,7 +220,6 @@ class PhotoShutter(enum.Enum):
     SEC_30 = 6
 
 
-    
 class PhotoSpotMeter(enum.Enum):
     ON = 1
     OFF = 0
@@ -250,6 +257,130 @@ class PhotoSharpness(enum.Enum):
     
     
 class PhotoEVComp(enum.Enum):
+    MINUS_2 = 8
+    MINUS_1_5 = 7
+    MINUS_1 = 6
+    MINUS_0_5 = 5
+    ZERO = 4
+    PLUS_0_5 = 3
+    PLUS_1 = 2
+    PLUS_1_5 = 1
+    PLUS_2 = 0
+
+
+class MultishotSubMode(enum.Enum):
+    BURST = 0
+    TIMELAPSE = 1
+    NIGHTLAPSE = 2
+
+
+class MultishotDefaultSubMode(enum.Enum):
+    BURST = 0
+    TIMELAPSE = 1
+    NIGHTLAPSE = 2
+
+
+class MultishotNightShutterExposure(enum.Enum):
+    AUTO = 0
+    SEC_2 = 1
+    SEC_5 = 2
+    SEC_10 = 3
+    SEC_15 = 4
+    SEC_20 = 5
+    SEC_30 = 6
+
+
+class MultishotBurstRate(enum.Enum):
+    SEC_1_PHOTO_3 = 0
+    SEC_1_PHOTO_5 = 1
+    SEC_1_PHOTO_10 = 2
+    SEC_2_PHOTO_10 = 3
+    SEC_3_PHOTO_10 = 4
+    SEC_1_PHOTO_30 = 5
+    SEC_2_PHOTO_30 = 6
+    SEC_3_PHOTO_30 = 7
+    SEC_6_PHOTO_30 = 8
+
+
+class MultishotTimelapseInterval(enum.Enum):
+    SEC_0_5 = 0
+    SEC_1 = 1
+    SEC_2 = 2
+    SEC_5 = 5
+    SEC_10 = 10
+    SEC_30 = 30
+    SEC_60 = 60
+
+
+class MultishotNightlapseInterval(enum.Enum):
+    CONTINUOUS = 0
+    SEC_4 = 4
+    SEC_5 = 5
+    SEC_10 = 10
+    SEC_15 = 15
+    SEC_20 = 20
+    SEC_30 = 30
+
+    SEC_60 = 60
+    MIN_1 = 60
+
+    SEC_120 = 120
+    MIN_2 = 120
+
+    SEC_300 = 300
+    MIN_5 = 300
+
+    SEC_1800 = 1800
+    MIN_30 = 1800
+
+    SEC_3600 = 3600
+    MIN_60 = 3600
+
+
+class MultishotMegapixel(enum.Enum):
+    WIDE_12MP = 0
+    WIDE_7MP = 1
+    MEDIUM_7MP = 2
+    MEDIUM_5MP = 3
+
+
+class MultishotSpotMeter(enum.Enum):
+    ON = 1
+    OFF = 0
+    
+    
+class MultishotProtune(enum.Enum):
+    ON = 1
+    OFF = 0
+
+
+class MultishotWhiteBalance(enum.Enum):
+    AUTO = 0
+    WB_3000K = 1
+    WB_5500K = 2
+    WB_6500K = 3
+    NATIVE = 4
+    
+
+class MultishotColor(enum.Enum):
+    GOPRO_COLOR = 0
+    FLAT = 1
+    
+
+class MultishotIsoLimit(enum.Enum):
+    ISO_800 = 0
+    ISO_400 = 1
+    ISO_200 = 2
+    ISO_100 = 3
+    
+    
+class MultishotSharpness(enum.Enum):
+    HIGH = 0
+    MEDIUM = 1
+    LOW = 2
+    
+    
+class MultishotEVComp(enum.Enum):
     MINUS_2 = 8
     MINUS_1_5 = 7
     MINUS_1 = 6
