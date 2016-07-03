@@ -1,11 +1,158 @@
 import enum
 
 
-class Glue(enum.Enum):
+class Glue:
     @staticmethod
     def lookup(key, value):
-        if key == Settings.VIDEO_LOW_LIGHT:
+        # Video
+
+        if key == Settings.VIDEO_SUB_MODE or Settings.VIDEO_SUB_MODE.value:
+            return VideoSubMode(value)
+
+        if key == Settings.VIDEO_RESOLUTION or Settings.VIDEO_RESOLUTION.value:
+            return VideoResolution(value)
+
+        if key == Settings.VIDEO_FRAME_RATE or Settings.VIDEO_FRAME_RATE.value:
+            return VideoFrameRate(value)
+        
+        if key == Settings.VIDEO_FOV or Settings.VIDEO_FOV.value:
+            return VideoFOV(value)
+        
+        if key == Settings.TIMELAPSE_VIDEO_INTERVAL or Settings.TIMELAPSE_VIDEO_INTERVAL.value:
+            return TimelapseVideoInterval(value)
+        
+        if key == Settings.LOOPING_VIDEO_INTERVAL or Settings.LOOPING_VIDEO_INTERVAL.value:
+            return LoopingVideoInterval(value)
+        
+        if key == Settings.VIDEO_LOW_LIGHT or Settings.VIDEO_LOW_LIGHT.value:
             return VideoLowLight(value)
+        
+        if key == Settings.VIDEO_SPOT_METER or Settings.VIDEO_SPOT_METER.value:
+            return VideoSpotMeter(value)
+        
+        if key == Settings.VIDEO_PROTUNE or Settings.VIDEO_PROTUNE.value:
+            return VideoProtune(value)
+        
+        if key == Settings.WHITE_BALANCE or Settings.WHITE_BALANCE.value:
+            return VideoWhiteBalance(value)
+        
+        if key == Settings.VIDEO_COLOR or Settings.VIDEO_COLOR.value:
+            return VideoColor(value)
+        
+        if key == Settings.VIDEO_ISO_LIMIT or Settings.VIDEO_ISO_LIMIT.value:
+            return VideoIsoLimit(value)
+        
+        if key == Settings.VIDEO_SHARPNESS or Settings.VIDEO_SHARPNESS.value:
+            return VideoSharpness(value)
+        
+        if key == Settings.VIDEO_EV_COMP or Settings.VIDEO_EV_COMP.value:
+            return VideoEVComp(value)
+
+        # Photo
+
+        if key == Settings.PHOTO_SUB_MODE or Settings.PHOTO_SUB_MODE.value:
+            return PhotoSubMode(value)
+        
+        if key == Settings.PHOTO_MEGAPIXEL or Settings.PHOTO_MEGAPIXEL.value:
+            return PhotoMegapixel(value)
+        
+        if key == Settings.PHOTO_CONTINUOUS_RATE or Settings.PHOTO_CONTINUOUS_RATE.value:
+            return PhotoContinuousRate(value)
+        
+        if key == Settings.PHOTO_SHUTTER or Settings.PHOTO_SHUTTER.value:
+            return PhotoShutter(value)
+        
+        if key == Settings.PHOTO_SPOT_METER or Settings.PHOTO_SPOT_METER.value:
+            return PhotoSpotMeter(value)
+        
+        if key == Settings.PHOTO_PROTUNE or Settings.PHOTO_PROTUNE.value:
+            return PhotoProtune(value)
+        
+        if key == Settings.WHITE_BALANCE or Settings.WHITE_BALANCE.value:
+            return PhotoWhiteBalance(value)
+        
+        if key == Settings.PHOTO_COLOR or Settings.PHOTO_COLOR.value:
+            return PhotoColor(value)
+        
+        if key == Settings.PHOTO_ISO_LIMIT or Settings.PHOTO_ISO_LIMIT.value:
+            return PhotoIsoLimit(value)
+        
+        if key == Settings.PHOTO_SHARPNESS or Settings.PHOTO_SHARPNESS.value:
+            return PhotoSharpness(value)
+        
+        if key == Settings.PHOTO_EV_COMP or Settings.PHOTO_EV_COMP.value:
+            return PhotoEVComp(value)
+
+        if key == Settings.MULTISHOT_SUB_MODE or Settings.MULTISHOT_SUB_MODE.value:
+            return MultishotSubMode(value)
+        
+        if key == Settings.MULTISHOT_DEFAULT_SUB_MODE or Settings.MULTISHOT_DEFAULT_SUB_MODE.value:
+            return MultishotDefaultSubMode(value)
+        
+        if key == Settings.MULTISHOT_NIGHT_SHUTTER_EXPOSURE or Settings.MULTISHOT_NIGHT_SHUTTER_EXPOSURE.value:
+            return MultishotNightShutterExposure(value)
+        
+        if key == Settings.MULTISHOT_BURST_RATE or Settings.MULTISHOT_BURST_RATE.value:
+            return MultishotBurstRate(value)
+        
+        if key == Settings.MULTISHOT_TIMELAPSE_INTERVAL or Settings.MULTISHOT_TIMELAPSE_INTERVAL.value:
+            return MultishotTimelapseInterval(value)
+        
+        if key == Settings.MULTISHOT_NIGHTLAPSE_INTERVAL or Settings.MULTISHOT_NIGHTLAPSE_INTERVAL.value:
+            return MultishotNightlapseInterval(value)
+        
+        if key == Settings.MULTISHOT_MEGAPIXEL or Settings.MULTISHOT_MEGAPIXEL.value:
+            return MultishotMegapixel(value)
+        
+        if key == Settings.MULTISHOT_SPOT_METER or Settings.MULTISHOT_SPOT_METER.value:
+            return MultishotSpotMeter(value)
+        
+        if key == Settings.MULTISHOT_PROTUNE or Settings.MULTISHOT_PROTUNE.value:
+            return MultishotProtune(value)
+        
+        if key == Settings.WHITE_BALANCE or Settings.WHITE_BALANCE.value:
+            return MultishotWhiteBalance(value)
+        
+        if key == Settings.MULTISHOT_COLOR or Settings.MULTISHOT_COLOR.value:
+            return MultishotColor(value)
+        
+        if key == Settings.MULTISHOT_ISO_LIMIT or Settings.MULTISHOT_ISO_LIMIT.value:
+            return MultishotIsoLimit(value)
+        
+        if key == Settings.MULTISHOT_SHARPNESS or Settings.MULTISHOT_SHARPNESS.value:
+            return MultishotSharpness(value)
+        
+        if key == Settings.MULTISHOT_EV_COMP or Settings.MULTISHOT_EV_COMP.value:
+            return MultishotEVComp(value)
+
+        # Other
+
+        if key == Settings.LCD_DISPLAY or Settings.LCD_DISPLAY.value:
+            return LCDisplay(value)
+
+        if key == Settings.ORIENTATION or Settings.ORIENTATION.value:
+            return Orientation(value)
+
+        if key == Settings.DEFAULT_BOOT_MODE or Settings.DEFAULT_BOOT_MODE.value:
+            return DefaultBootMode(value)
+
+        if key == Settings.QUICK_CAPTURE or Settings.QUICK_CAPTURE.value:
+            return QuickCapture(value)
+
+        if key == Settings.LED_STATUS or Settings.LED_STATUS.value:
+            return LEDStatus(value)
+
+        if key == Settings.BEEP_VOLUME or Settings.BEEP_VOLUME.value:
+            return BeepVolume(value)
+
+        if key == Settings.VIDEO_FORMAT or Settings.VIDEO_FORMAT.value:
+            return VideoFormat(value)
+
+        if key == Settings.ON_SCREEN_DATA or Settings.ON_SCREEN_DATA.value:
+            return OnScreenData(value)
+
+        if key == Settings.AUTO_POWER_OFF or Settings.AUTO_POWER_OFF.value:
+            return AutoPowerOff(value)
 
 
 @enum.unique
@@ -58,7 +205,7 @@ class Settings(enum.Enum):
     LCD_DISPLAY = 72
     ORIENTATION = 52
     DEFAULT_BOOT_MODE = 53
-    QICK_CAPTURE = 54
+    QUICK_CAPTURE = 54
     LED_STATUS = 55
     BEEP_VOLUME = 56
     VIDEO_FORMAT = 57
@@ -390,3 +537,56 @@ class MultishotEVComp(enum.Enum):
     PLUS_1 = 2
     PLUS_1_5 = 1
     PLUS_2 = 0
+
+class LCDisplay(enum.Enum):
+    ON = 1
+    OFF = 0
+
+class Orientation(enum.Enum):
+    AUTO = 0
+    UP = 1
+    DOWN = 2
+
+
+class DefaultBootMode(enum.Enum):
+    VIDEO = 0
+    PHOTO = 1
+    MULTISHOT = 2
+
+
+class QuickCapture(enum.Enum):
+    ON = 1
+    OFF = 0
+
+
+class LEDStatus(enum.Enum):
+    LED_0 = 0
+    OFF = 0
+    LED_2 = 1
+    LED_4 = 2
+
+
+class BeepVolume(enum.Enum):
+    MUTE = 2
+    MEDIUM = 1
+    PERCENT_70 = 1
+    FULL = 0
+    PERCENT_100 = 0
+
+
+class VideoFormat(enum.Enum):
+    NTSC = 0
+    PAL = 1
+
+
+class OnScreenData(enum.Enum):
+    ON = 1
+    OFF = 0
+
+
+class AutoPowerOff(enum.Enum):
+    NEVER = 0
+    MIN_1 = 1
+    MIN_2 = 2
+    MIN_3 = 3
+    MIN_5 = 5
