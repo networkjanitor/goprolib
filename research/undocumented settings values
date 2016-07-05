@@ -11,3 +11,15 @@ Undocumented Key,Value pair: 65 = 0     accepted values: []
 Undocumented Key,Value pair: 66 = 0     accepted values: []
 Undocumented Key,Value pair: 67 = 0     accepted values: [*]
 Undocumented Key,Value pair: 71 = 0     accepted values: []
+
+
+# Click on pair with new gopro
+Wireless.SCAN_STATE                     : OLD: 1     NEW: 4
+Wireless.SCAN_TIME_MSEC                 : OLD: 0     NEW: 56102778
+Wireless.PAIR_STATE                     : OLD: 3     NEW: 1
+
+# Click on Cancel
+Wireless.PAIR_STATE                     : OLD: 1     NEW: 3
+
+# Pair with Wifi Remote
+Wireless.PAIR_TYPE                      : OLD: 1     NEW: 2

@@ -195,6 +195,7 @@ class Status:
 
             PLAYBACK = 4
             SETUP = 5
+            CUTTING = 9 # Cut clip in playback menu, active while saving the clip
         MODE = 43
 
         # noinspection PyPep8Naming
@@ -224,9 +225,7 @@ class Status:
 
     # Video
     class Video(enum.Enum):
-        # noinspection PyPep8Naming
-        class video_progress_counter(enum.Enum):
-            pass
+        # Seconds, how long the current, ongoing video recording is
         VIDEO_PROGRESS_COUNTER = 13
 
         # noinspection PyPep8Naming
@@ -238,7 +237,9 @@ class Status:
     class Photo(enum.Enum):
         # noinspection PyPep8Naming
         class photo_protune_default(enum.Enum):
-            pass
+            # Indicates if the photo protune settings are different from the default ones
+            IS_DEFAULT = 1
+            IS_NOT_DEFAULT = 0
         PHOTO_PROTUNE_DEFAULT = 47
 
     # Multishot
@@ -248,9 +249,7 @@ class Status:
             pass
         MULTI_SHOT_PROTUNE_DEFAULT = 48
 
-        # noinspection PyPep8Naming
-        class multi_shot_count_down(enum.Enum):
-            pass
+        # Seconds until next multishot photo will be taken (timelapse/nightlapse only?)
         MULTI_SHOT_COUNT_DOWN = 49
 
     # Broadcast
