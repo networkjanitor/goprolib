@@ -64,7 +64,7 @@ class Status:
                         # together with the case that no such class exists
                         pass
                     # No such class exists, raise exception with the found result for the key
-                    raise ValueForExistingKeyNotFoundException(key_lookup)
+                    raise ValueForExistingKeyNotFoundException(key, value, key_lookup)
                 else:
                     # Only key requested
                     return key_lookup
@@ -78,7 +78,7 @@ class Status:
     def _find(key, searchenum):
         try:
             for item in list(searchenum):
-                if key == item.value:
+                if str(key) == str(item.value):
                     return item
         except Exception:
             pass
@@ -97,32 +97,42 @@ class Status:
     class System(enum.Enum):
         # noinspection PyPep8Naming
         class internal_battery_present(enum.Enum):
-            pass
+            NOT_PRESENT = 0
+            PRESENT = 1
         INTERNAL_BATTERY_PRESENT = 1
         
         # noinspection PyPep8Naming
         class internal_battery_level(enum.Enum):
-            pass
+            LOW = 1
+            HALFWAY = 2
+            FULL = 3
+            CHARGING = 4
         INTERNAL_BATTERY_LEVEL = 2
         
         # noinspection PyPep8Naming
         class external_battery_present(enum.Enum):
-            pass
+            NOT_PRESENT = 0
+            PRESENT = 1
         EXTERNAL_BATTERY_PRESENT = 3
 
         # noinspection PyPep8Naming
         class external_battery_level(enum.Enum):
-            pass
+            LOW = 1
+            HALFWAY = 2
+            FULL = 3
+            CHARGING = 4
         EXTERNAL_BATTERY_LEVEL = 4
 
         # noinspection PyPep8Naming
         class system_hot(enum.Enum):
-            pass
+            NOT_HOT = 0
+            HOT = 1
         SYSTEM_HOT = 6
 
         # noinspection PyPep8Naming
         class system_busy(enum.Enum):
-            pass
+            NOT_BUSY = 0
+            BUSY = 1
         SYSTEM_BUSY = 8
 
         # noinspection PyPep8Naming
@@ -132,7 +142,9 @@ class Status:
 
         # noinspection PyPep8Naming
         class encoding_active(enum.Enum):
-            pass
+            # TODO: Exp.
+            ACTIVE = 1
+            NOT_ACTIVE = 0
         ENCODING_ACTIVE = 10
 
         # noinspection PyPep8Naming
@@ -157,7 +169,9 @@ class Status:
 
         # noinspection PyPep8Naming
         class analytics_ready(enum.Enum):
-            pass
+            # TODO: Exp.
+            READY = 2
+            NOT_READY = 0
         ANALYTICS_READY = 61
 
         # noinspection PyPep8Naming
@@ -167,19 +181,45 @@ class Status:
 
         # noinspection PyPep8Naming
         class in_contextual_menu(enum.Enum):
-            pass
+            IN_CONTEXT_MENU = 1
+            NOT_IN_CONTEXT_MENU = 0
         IN_CONTEXTUAL_MENU = 63
 
     # App
     class App(enum.Enum):
         # noinspection PyPep8Naming
         class mode(enum.Enum):
-            pass
+            VIDEO = 0
+            PHOTO = 1
+            MULTISHOT = 2
+
+            PLAYBACK = 4
+            SETUP = 5
         MODE = 43
 
         # noinspection PyPep8Naming
         class sub_mode(enum.Enum):
-            pass
+            # Enum returns on search by value only the first found
+            # => Introducing generic results
+
+            FIRST_SUB_MODE = 0
+            SECOND_SUB_MODE = 1
+            THIRD_SUB_MODE = 2
+            FORTH_SUB_MODE = 3
+
+            VIDEO = 0
+            SINGLE_PIC = 0
+            BURST = 0
+
+            TIMELAPSE_VIDEO = 1
+            CONTINUOUS = 1
+            TIMELAPSE = 1
+
+            VIDEO_PHOTO = 2
+            NIGHT_PHOTO = 2
+            NIGHTLAPSE = 2
+
+            LOOPING = 3
         SUB_MODE = 44
 
     # Video
@@ -323,61 +363,28 @@ class Status:
             pass
         SD_STATUS = 33
 
-        # noinspection PyPep8Naming
-        class remaining_photos(enum.Enum):
-            pass
         REMAINING_PHOTOS = 34
 
-        # noinspection PyPep8Naming
-        class remaining_video_time(enum.Enum):
-            pass
         REMAINING_VIDEO_TIME = 35
 
-        # noinspection PyPep8Naming
-        class remaining_space(enum.Enum):
-            pass
         REMAINING_SPACE = 54
 
-        # noinspection PyPep8Naming
-        class num_group_photos(enum.Enum):
-            pass
         NUM_GROUP_PHOTOS = 36
 
-        # noinspection PyPep8Naming
-        class num_group_video(enum.Enum):
-            pass
         NUM_GROUP_VIDEO = 37
 
-        # noinspection PyPep8Naming
-        class num_total_photos(enum.Enum):
-            pass
         NUM_TOTAL_PHOTOS = 38
 
-        # noinspection PyPep8Naming
-        class num_total_videos(enum.Enum):
-            pass
         NUM_TOTAL_VIDEOS = 39
 
-        # noinspection PyPep8Naming
-        class num_hilights(enum.Enum):
-            pass
         NUM_HILIGHTS = 58
 
-        # noinspection PyPep8Naming
-        class last_hilight_time_msec(enum.Enum):
-            pass
         LAST_HILIGHT_TIME_MSEC = 59
 
-        # noinspection PyPep8Naming
-        class remaining_timelapse_time(enum.Enum):
-            pass
         REMAINING_TIMELAPSE_TIME = 64
 
     # Setup
     class Setup(enum.Enum):
-        # noinspection PyPep8Naming
-        class date_time(enum.Enum):
-            pass
         DATE_TIME = 40
 
     # FwUpdate
@@ -391,46 +398,6 @@ class Status:
         class download_cancel_request_pending(enum.Enum):
             pass
         DOWNLOAD_CANCEL_REQUEST_PENDING = 42
-
-
-class BatteryStatus(enum.Enum):
-    BATTERY_UNAVAILABLE = 0
-    BATTERY_AVAILABLE = 1
-
-
-class BatteryLevel(enum.Enum):
-    LOW = 1
-    HALFWAY = 2
-    FULL = 3
-    CHARGING = 4
-
-
-class CurrentMode(enum.Enum):
-    VIDEO = 0
-    PHOTO = 1
-    MULTISHOT = 2
-
-
-class CurrentSubMode(enum.Enum):
-    # Enum returns on search by value only the first found
-    # => Introducing generic results
-
-    FIRST_SUB_MODE = 0
-    SECOND_SUB_MODE = 1
-    THIRD_SUB_MODE = 2
-    FORTH_SUB_MODE = 4
-
-    VIDEO = 0
-    SINGLE_PIC = 0
-    BURST = 0
-
-    TIMELAPSE_VIDEO = 1
-    CONTINUOUS = 1
-    TIMELAPSE = 1
-
-    VIDEO_PHOTO = 2
-    NIGHT_PHOTO = 2
-    NIGHTLAPSE = 2
 
 
 class StreamingFeedStatus(enum.Enum):

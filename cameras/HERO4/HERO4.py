@@ -132,13 +132,25 @@ class HERO4:
         raise NotImplementedError(
             'No information to the status value {status} found in this GoPro'.format(status=status_key))
 
-    def print_status(self):
+    def _get_status(self):
         status = self._command_api('/status')
 
         _errors = []
+        _status = []
+
         for key in status['status']:
-            group, field = self._find_status(key)
-            # print('Group: {group} Name: {name} = {value}'.format(name=field['name'].ljust(30),value=status['status'][key],group=group['group'].ljust(20)))
+            try:
+                stat_key, stat_val = gpStats.Status.lookup(key, status['status'][key])
+                _status.append((stat_key, stat_val))
+            except gpStats.ValueForExistingKeyNotFoundException as e:
+                stat_key = e.found_key
+                stat_val = e.search_value
+                _status.append((stat_key, stat_val))
+            except gpStats.KeyNotFoundException as e:
+                stat_key = e.search_key
+                stat_val = status['status'][key]
+                _status.append((stat_key, stat_val))
+
         for setting in status['settings']:
             try:
                 stat_setting, option = self._find_value_and_setting(setting, status['settings'][setting])
@@ -146,9 +158,49 @@ class HERO4:
                 # print('Group: {group} Name: {name} = {value}'.format(name=stat_setting['display_name'].ljust(30),value=option['display_name'],group=stat_setting['path_segment'].ljust(20)))
             except:
                 _errors.append((setting, status['settings'][setting]))
-        for key, value in sorted(_errors, key=lambda setting: setting[0]):
+
+        return sorted(_status, key=lambda status: str(status[0])), sorted(_errors, key=lambda setting: str(setting[0]))
+
+    def watch_status(self):
+        old_status_obj = None
+        old_error_obj = None
+        while True:
+            status_obj, error_obj = self._get_status()
+            if old_status_obj is None and old_error_obj is None:
+                old_status_obj = status_obj
+                old_error_obj = error_obj
+                self.print_status(status_obj, error_obj)
+
+            # compare status
+            for key,value in status_obj:
+                for old_key, old_value in old_status_obj:
+                    if key.value == old_key.value and str(key) != 'System.CURRENT_TIME_MSEC' and str(key) != 'Setup.DATE_TIME':
+
+                        if value != old_value:
+                            print('{name}: OLD: {old_val} NEW: {new_val}'.format(name=str(key).ljust(40),old_val=str(old_value).ljust(5),new_val=str(value).ljust(5)))
+
+            # compare errors
+            for key,value in error_obj:
+                for old_key, old_value in old_error_obj:
+                    if key == old_key:
+                        if value != old_value:
+                            print('UNDOCUMENTED: {name}: OLD: {old_val} NEW: {new_val}'.format(name=str(key).ljust(40),old_val=str(old_value).ljust(5),new_val=str(value).ljust(5)))
+            old_status_obj = status_obj
+            old_error_obj = error_obj
+
+
+
+
+    def print_status(self, status_obj=None, error_obj=None):
+        if status_obj is None and error_obj is None:
+            status_obj, error_obj = self._get_status()
+
+        for stat_key,stat_val in status_obj:
+            print('Name: {name} = {value}'.format(name=str(stat_key).ljust(40),value=stat_val))
+
+        for key, value in error_obj:
             print("Undocumented Key,Value pair: {key} = {value}".format(key=key, value=value))
-            print(status)
+
 
     def download_all(self, url='/', path='.'):
         medialist = self._media_api(url)
@@ -189,6 +241,6 @@ class HERO4:
 if __name__ == '__main__':
     h4 = HERO4()
     h4._autoconfigure()
-    h4._find_status()
-    h4.dump_all()
+    h4.watch_status()
+    #h4.dump_all()
     # h4.download_all(path='/media/xyoz/XYOZ-INT1000E/Pictures/2016_07_ScriptedTimelapseExperiments')
