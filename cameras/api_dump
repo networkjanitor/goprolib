@@ -1,0 +1,2392 @@
+
+Commands:
+	Key: GPCAMERA_SHUTTER
+		Widget: button
+		Display: Start or stop capture
+		URL: /command/shutter
+
+	Key: GPCAMERA_MODE
+		Widget: button
+		Display: Set Mode
+		URL: /command/mode
+
+	Key: GPCAMERA_SUBMODE
+		Widget: button
+		Display: Set Mode and Sub-Mode
+		URL: /command/sub_mode
+
+	Key: GPCAMERA_POWER_ID
+		Widget: button
+		Display: Power Off Camera
+		URL: /command/system/sleep
+
+	Key: GPCAMERA_FWUPDATE_DOWNLOAD_START
+		Widget: button
+		Display: Notify start FW Update File Download
+		URL: /command/fwupdate/download/start
+
+	Key: GPCAMERA_FWUPDATE_DOWNLOAD_DONE
+		Widget: button
+		Display: Notify completion of FW Update File Download
+		URL: /command/fwupdate/download/done
+
+	Key: GPCAMERA_FWUPDATE_DOWNLOAD_CANCEL
+		Widget: button
+		Display: Cancel FW Update File Download
+		URL: /command/fwupdate/download/cancel
+
+	Key: GPCAMERA_FACTORY_RESET
+		Widget: button
+		Display: Reset to Factory Defaults
+		URL: /command/system/factory/reset
+
+	Key: GPCAMERA_SLEEP
+		Widget: button
+		Display: Power Saving Sleep Mode
+		URL: /command/system/sleep
+
+	Key: GPCAMERA_USE_CURRENT_WIRELESS_REMOTE_ID
+		Widget: button
+		Display: Use with Current Wi-Fi Remote
+		URL: /setting/63/2
+
+	Key: GPCAMERA_USE_NEW_WIRELESS_REMOTE_ID
+		Widget: button
+		Display: Use with New Wi-Fi Remote
+		URL: /command/wireless/rc/pair
+
+	Key: GPCAMERA_CANCEL_PAIR_WIRELESS_REMOTE_ID
+		Widget: button
+		Display: Cancel pairing of new Wi-Fi Remote
+		URL: /command/wireless/rc/pair/cancel
+
+	Key: GPCAMERA_CANCEL_PAIR_WIRELESS_ID
+		Widget: button
+		Display: Cancel pairing if already paired
+		URL: /command/wireless/pair/cancel
+
+	Key: GPCAMERA_VIDEO_PROTUNE_RESET_TO_DEFAULT
+		Widget: button
+		Display: Reset Protune
+		URL: /command/video/protune/reset
+
+	Key: GPCAMERA_MULTISHOT_PROTUNE_RESET_TO_DEFAULT
+		Widget: button
+		Display: Reset Protune
+		URL: /command/multi_shot/protune/reset
+
+	Key: GPCAMERA_PHOTO_PROTUNE_RESET_TO_DEFAULT
+		Widget: button
+		Display: Reset Protune
+		URL: /command/photo/protune/reset
+
+	Key: GPCAMERA_SET_DATE_AND_TIME_ID
+		Widget: button
+		Display: Set Date and Time
+		URL: /command/setup/date_time
+
+	Key: GPCAMERA_DELETE_LAST_FILE_ID
+		Widget: button
+		Display: Delete Last File
+		URL: /command/storage/delete/last
+
+	Key: GPCAMERA_DELETE_ALL_FILES_ID
+		Widget: button
+		Display: Delete All Files from SD Card
+		URL: /command/storage/delete/all
+
+	Key: GPCAMERA_DELETE_FILE_ID
+		Widget: button
+		Display: Delete File
+		URL: /command/storage/delete
+
+	Key: GPCAMERA_LOCATE_ID
+		Widget: toggle
+		Display: Locate Camera
+		URL: /command/system/locate
+
+	Key: GPCAMERA_NETWORK_NAME_ID
+		Widget: text
+		Display: Name
+		URL: /command/wireless/ap/ssid
+
+	Key: GPCAMERA_AP_CONTROL
+		Widget: button
+		Display: Control Wi-Fi AP
+		URL: /command/wireless/ap/control
+
+	Key: GPCAMERA_INFO_VERSION_ID
+		Widget: readonly
+		Display: Version
+		URL: camera_version
+
+	Key: GPCAMERA_NETWORK_VERSION_ID
+		Widget: readonly
+		Display: Version
+		URL: bacpac_version
+
+	Key: GPCAMERA_BATTERY_LEVEL_ID
+		Widget: readonly
+		Display: Battery Level
+		URL: camera_battery
+
+	Key: GPCAMERA_SDCARD_CAPACITY_ID
+		Widget: child
+		Display: SD Card Capacity
+		URL: sd_card
+
+	Key: GPCAMERA_TAG_MOMENT
+		Widget: button
+		Display: Tag Moment
+		URL: /command/storage/tag_moment
+
+	Key: GPCAMERA_RC_PAIR
+		Widget: button
+		Display: Pair with Known RC
+		URL: /command/rc/pair
+
+	Key: GPCAMERA_SSID_SCAN
+		Widget: button
+		Display: Start Wi-Fi SSID Scan
+		URL: /command/wireless/ssid/scan
+
+	Key: GPCAMERA_SSID_LIST
+		Widget: button
+		Display: Wi-Fi SSID Scan Results
+		URL: /command/wireless/ssid/list
+
+	Key: GPCAMERA_SSID_SELECT
+		Widget: button
+		Display: Connect to Wi-Fi SSID
+		URL: /command/wireless/ssid/select
+
+	Key: GPCAMERA_SSID_DELETE
+		Widget: button
+		Display: Delete Wi-Fi SSID from Known List
+		URL: /command/wireless/ssid/delete
+
+Display Hints:
+	Category: Video Settings
+		Commands:
+			Key: GPCAMERA_VIDEO_PROTUNE_RESET_TO_DEFAULT
+			Display: Reset Protune
+			Precedence: 1
+
+		Settings:
+			Display Name: Interval
+			Setting id: 5
+			Widget Type: select
+			Options:
+				Display Name: 0.5 Seconds
+				Value: 0
+
+				Display Name: 1 Second
+				Value: 1
+
+				Display Name: 2 Seconds
+				Value: 2
+
+				Display Name: 5 Seconds
+				Value: 3
+
+				Display Name: 10 Seconds
+				Value: 4
+
+				Display Name: 30 Seconds
+				Value: 5
+
+				Display Name: 60 Seconds
+				Value: 6
+
+			Display Name: Interval
+			Setting id: 6
+			Widget Type: select
+			Options:
+				Display Name: Max
+				Value: 0
+
+				Display Name: 5 Minutes
+				Value: 1
+
+				Display Name: 20 Minutes
+				Value: 2
+
+				Display Name: 60 Minutes
+				Value: 3
+
+				Display Name: 120 Minutes
+				Value: 4
+
+			Display Name: Interval
+			Setting id: 7
+			Widget Type: select
+			Options:
+				Display Name: 1 Photo / 5 Seconds
+				Value: 1
+
+				Display Name: 1 Photo / 10 Seconds
+				Value: 2
+
+				Display Name: 1 Photo / 30 Seconds
+				Value: 3
+
+				Display Name: 1 Photo / 60 Seconds
+				Value: 4
+
+			Display Name: Resolution
+			Setting id: 2
+			Widget Type: select
+			Options:
+				Display Name: 4K
+				Value: 1
+
+				Display Name: 2.7K
+				Value: 4
+
+				Display Name: 2.7K 4:3
+				Value: 6
+
+				Display Name: 1440
+				Value: 7
+
+				Display Name: 1080 SuperView
+				Value: 8
+
+				Display Name: 1080
+				Value: 9
+
+				Display Name: 960
+				Value: 10
+
+				Display Name: 720 SuperView
+				Value: 11
+
+				Display Name: 720
+				Value: 12
+
+				Display Name: WVGA
+				Value: 13
+
+			Display Name: Frames Per Second
+			Setting id: 3
+			Widget Type: select
+			Options:
+				Display Name: 240
+				Value: 0
+
+				Display Name: 120
+				Value: 1
+
+				Display Name: 100
+				Value: 2
+
+				Display Name: 90
+				Value: 3
+
+				Display Name: 80
+				Value: 4
+
+				Display Name: 60
+				Value: 5
+
+				Display Name: 50
+				Value: 6
+
+				Display Name: 48
+				Value: 7
+
+				Display Name: 30
+				Value: 8
+
+				Display Name: 25
+				Value: 9
+
+				Display Name: 24
+				Value: 10
+
+				Display Name: 15
+				Value: 11
+
+				Display Name: 12.5
+				Value: 12
+
+			Display Name: Field Of View
+			Setting id: 4
+			Widget Type: select
+			Options:
+				Display Name: Wide
+				Value: 0
+
+				Display Name: Medium
+				Value: 1
+
+				Display Name: Narrow
+				Value: 2
+
+			Display Name: Low Light
+			Setting id: 8
+			Widget Type: toggle
+			Options:
+				Display Name: ON
+				Value: 1
+
+				Display Name: OFF
+				Value: 0
+
+			Display Name: Spot Meter
+			Setting id: 9
+			Widget Type: toggle
+			Options:
+				Display Name: ON
+				Value: 1
+
+				Display Name: OFF
+				Value: 0
+
+			Display Name: Protune
+			Setting id: 10
+			Widget Type: toggle
+			Options:
+				Display Name: ON
+				Value: 1
+
+				Display Name: OFF
+				Value: 0
+
+			Display Name: White Balance
+			Setting id: 11
+			Widget Type: select
+			Options:
+				Display Name: Auto
+				Value: 0
+
+				Display Name: 3000K
+				Value: 1
+
+				Display Name: 5500K
+				Value: 2
+
+				Display Name: 6500K
+				Value: 3
+
+				Display Name: Native
+				Value: 4
+
+			Display Name: Color
+			Setting id: 12
+			Widget Type: select
+			Options:
+				Display Name: GoPro Color
+				Value: 0
+
+				Display Name: Flat
+				Value: 1
+
+			Display Name: ISO Limit
+			Setting id: 13
+			Widget Type: select
+			Options:
+				Display Name: 6400
+				Value: 0
+
+				Display Name: 1600
+				Value: 1
+
+				Display Name: 400
+				Value: 2
+
+				Display Name: 3200
+				Value: 3
+
+				Display Name: 800
+				Value: 4
+
+			Display Name: Sharpness
+			Setting id: 14
+			Widget Type: select
+			Options:
+				Display Name: High
+				Value: 0
+
+				Display Name: Medium
+				Value: 1
+
+				Display Name: Low
+				Value: 2
+
+			Display Name: EV Comp
+			Setting id: 15
+			Widget Type: slider
+			Options:
+				Display Name: -2.0
+				Value: 8
+
+				Display Name: -1.5
+				Value: 7
+
+				Display Name: -1.0
+				Value: 6
+
+				Display Name: -0.5
+				Value: 5
+
+				Display Name: 0.0
+				Value: 4
+
+				Display Name: 0.5
+				Value: 3
+
+				Display Name: 1.0
+				Value: 2
+
+				Display Name: 1.5
+				Value: 1
+
+				Display Name: 2.0
+				Value: 0
+
+	Category: Photo Settings
+		Commands:
+			Key: GPCAMERA_PHOTO_PROTUNE_RESET_TO_DEFAULT
+			Display: Reset Protune
+			Precedence: 1
+
+		Settings:
+			Display Name: Interval
+			Setting id: 18
+			Widget Type: select
+			Options:
+				Display Name: 3 Frames / Second
+				Value: 0
+
+				Display Name: 5 Frames / Second
+				Value: 1
+
+				Display Name: 10 Frames / Second
+				Value: 2
+
+			Display Name: Shutter
+			Setting id: 19
+			Widget Type: select
+			Options:
+				Display Name: Auto
+				Value: 0
+
+				Display Name: 2 Seconds
+				Value: 1
+
+				Display Name: 5 Seconds
+				Value: 2
+
+				Display Name: 10 Seconds
+				Value: 3
+
+				Display Name: 15 Seconds
+				Value: 4
+
+				Display Name: 20 Seconds
+				Value: 5
+
+				Display Name: 30 Seconds
+				Value: 6
+
+			Display Name: Megapixels
+			Setting id: 17
+			Widget Type: select
+			Options:
+				Display Name: 12MP Wide
+				Value: 0
+
+				Display Name: 7MP Wide
+				Value: 1
+
+				Display Name: 7MP Med
+				Value: 2
+
+				Display Name: 5MP Med
+				Value: 3
+
+			Display Name: Spot Meter
+			Setting id: 20
+			Widget Type: toggle
+			Options:
+				Display Name: ON
+				Value: 1
+
+				Display Name: OFF
+				Value: 0
+
+			Display Name: Protune
+			Setting id: 21
+			Widget Type: toggle
+			Options:
+				Display Name: ON
+				Value: 1
+
+				Display Name: OFF
+				Value: 0
+
+			Display Name: White Balance
+			Setting id: 22
+			Widget Type: select
+			Options:
+				Display Name: Auto
+				Value: 0
+
+				Display Name: 3000K
+				Value: 1
+
+				Display Name: 5500K
+				Value: 2
+
+				Display Name: 6500K
+				Value: 3
+
+				Display Name: Native
+				Value: 4
+
+			Display Name: Color
+			Setting id: 23
+			Widget Type: select
+			Options:
+				Display Name: GoPro Color
+				Value: 0
+
+				Display Name: Flat
+				Value: 1
+
+			Display Name: ISO Limit
+			Setting id: 24
+			Widget Type: select
+			Options:
+				Display Name: 800
+				Value: 0
+
+				Display Name: 400
+				Value: 1
+
+				Display Name: 200
+				Value: 2
+
+				Display Name: 100
+				Value: 3
+
+			Display Name: Sharpness
+			Setting id: 25
+			Widget Type: select
+			Options:
+				Display Name: High
+				Value: 0
+
+				Display Name: Medium
+				Value: 1
+
+				Display Name: Low
+				Value: 2
+
+			Display Name: EV Comp
+			Setting id: 26
+			Widget Type: slider
+			Options:
+				Display Name: -2.0
+				Value: 8
+
+				Display Name: -1.5
+				Value: 7
+
+				Display Name: -1.0
+				Value: 6
+
+				Display Name: -0.5
+				Value: 5
+
+				Display Name: 0.0
+				Value: 4
+
+				Display Name: 0.5
+				Value: 3
+
+				Display Name: 1.0
+				Value: 2
+
+				Display Name: 1.5
+				Value: 1
+
+				Display Name: 2.0
+				Value: 0
+
+	Category: Multi-Shot Settings
+		Commands:
+			Key: GPCAMERA_MULTISHOT_PROTUNE_RESET_TO_DEFAULT
+			Display: Reset Protune
+			Precedence: 1
+
+		Settings:
+			Display Name: Shutter
+			Setting id: 31
+			Widget Type: select
+			Options:
+				Display Name: Auto
+				Value: 0
+
+				Display Name: 2 Seconds
+				Value: 1
+
+				Display Name: 5 Seconds
+				Value: 2
+
+				Display Name: 10 Seconds
+				Value: 3
+
+				Display Name: 15 Seconds
+				Value: 4
+
+				Display Name: 20 Seconds
+				Value: 5
+
+				Display Name: 30 Seconds
+				Value: 6
+
+			Display Name: Rate
+			Setting id: 29
+			Widget Type: select
+			Options:
+				Display Name: 3 Photos / 1 Second
+				Value: 0
+
+				Display Name: 5 Photos / 1 Second
+				Value: 1
+
+				Display Name: 10 Photos / 1 Second
+				Value: 2
+
+				Display Name: 10 Photos / 2 Seconds
+				Value: 3
+
+				Display Name: 10 Photos / 3 Seconds
+				Value: 4
+
+				Display Name: 30 Photos / 1 Second
+				Value: 5
+
+				Display Name: 30 Photos / 2 Seconds
+				Value: 6
+
+				Display Name: 30 Photos / 3 Seconds
+				Value: 7
+
+				Display Name: 30 Photos / 6 Seconds
+				Value: 8
+
+			Display Name: Interval
+			Setting id: 30
+			Widget Type: select
+			Options:
+				Display Name: 1 Photo / 0.5 Sec
+				Value: 0
+
+				Display Name: 1 Photo / 1 Sec
+				Value: 1
+
+				Display Name: 1 Photo / 2 Sec
+				Value: 2
+
+				Display Name: 1 Photo / 5 Sec
+				Value: 5
+
+				Display Name: 1 Photo / 10 Sec
+				Value: 10
+
+				Display Name: 1 Photo / 30 Sec
+				Value: 30
+
+				Display Name: 1 Photo / 60 Sec
+				Value: 60
+
+			Display Name: Interval
+			Setting id: 32
+			Widget Type: select
+			Options:
+				Display Name: Continuous
+				Value: 0
+
+				Display Name: 4 Seconds
+				Value: 4
+
+				Display Name: 5 Seconds
+				Value: 5
+
+				Display Name: 10 Seconds
+				Value: 10
+
+				Display Name: 15 Seconds
+				Value: 15
+
+				Display Name: 20 Seconds
+				Value: 20
+
+				Display Name: 30 Seconds
+				Value: 30
+
+				Display Name: 1 Minute
+				Value: 60
+
+				Display Name: 2 Minutes
+				Value: 120
+
+				Display Name: 5 Minutes
+				Value: 300
+
+				Display Name: 30 Minutes
+				Value: 1800
+
+				Display Name: 60 Minutes
+				Value: 3600
+
+			Display Name: Megapixels
+			Setting id: 28
+			Widget Type: select
+			Options:
+				Display Name: 12MP Wide
+				Value: 0
+
+				Display Name: 7MP Wide
+				Value: 1
+
+				Display Name: 7MP Med
+				Value: 2
+
+				Display Name: 5MP Med
+				Value: 3
+
+			Display Name: Spot Meter
+			Setting id: 33
+			Widget Type: toggle
+			Options:
+				Display Name: ON
+				Value: 1
+
+				Display Name: OFF
+				Value: 0
+
+			Display Name: Protune
+			Setting id: 34
+			Widget Type: toggle
+			Options:
+				Display Name: ON
+				Value: 1
+
+				Display Name: OFF
+				Value: 0
+
+			Display Name: White Balance
+			Setting id: 35
+			Widget Type: select
+			Options:
+				Display Name: Auto
+				Value: 0
+
+				Display Name: 3000K
+				Value: 1
+
+				Display Name: 5500K
+				Value: 2
+
+				Display Name: 6500K
+				Value: 3
+
+				Display Name: Native
+				Value: 4
+
+			Display Name: Color
+			Setting id: 36
+			Widget Type: select
+			Options:
+				Display Name: GoPro Color
+				Value: 0
+
+				Display Name: Flat
+				Value: 1
+
+			Display Name: ISO Limit
+			Setting id: 37
+			Widget Type: select
+			Options:
+				Display Name: 800
+				Value: 0
+
+				Display Name: 400
+				Value: 1
+
+				Display Name: 200
+				Value: 2
+
+				Display Name: 100
+				Value: 3
+
+			Display Name: Sharpness
+			Setting id: 38
+			Widget Type: select
+			Options:
+				Display Name: High
+				Value: 0
+
+				Display Name: Medium
+				Value: 1
+
+				Display Name: Low
+				Value: 2
+
+			Display Name: EV Comp
+			Setting id: 39
+			Widget Type: slider
+			Options:
+				Display Name: -2.0
+				Value: 8
+
+				Display Name: -1.5
+				Value: 7
+
+				Display Name: -1.0
+				Value: 6
+
+				Display Name: -0.5
+				Value: 5
+
+				Display Name: 0.0
+				Value: 4
+
+				Display Name: 0.5
+				Value: 3
+
+				Display Name: 1.0
+				Value: 2
+
+				Display Name: 1.5
+				Value: 1
+
+				Display Name: 2.0
+				Value: 0
+
+	Category: Setup
+		Commands:
+			Key: GPCAMERA_SET_DATE_AND_TIME_ID
+			Display: Set Date and Time
+			Precedence: 1
+
+		Settings:
+			Display Name: Orientation
+			Setting id: 52
+			Widget Type: select
+			Options:
+				Display Name: Up
+				Value: 1
+
+				Display Name: Down
+				Value: 2
+
+				Display Name: Auto
+				Value: 0
+
+			Display Name: Default Mode
+			Setting id: 53
+			Widget Type: select
+			Options:
+				Display Name: Video
+				Value: 0
+
+				Display Name: Photo
+				Value: 1
+
+				Display Name: Multi-shot
+				Value: 2
+
+			Display Name: Default Video Sub Mode
+			Setting id: 1
+			Widget Type: select
+			Options:
+				Display Name: Video
+				Value: 0
+
+				Display Name: Time Lapse Video
+				Value: 1
+
+				Display Name: Video + Photo
+				Value: 2
+
+				Display Name: Looping
+				Value: 3
+
+			Display Name: Default Photo Sub Mode
+			Setting id: 16
+			Widget Type: select
+			Options:
+				Display Name: Single
+				Value: 0
+
+				Display Name: Continuous
+				Value: 1
+
+				Display Name: Night
+				Value: 2
+
+			Display Name: Default Multi-Shot Sub Mode
+			Setting id: 27
+			Widget Type: select
+			Options:
+				Display Name: Burst
+				Value: 0
+
+				Display Name: Time Lapse
+				Value: 1
+
+				Display Name: Night Lapse
+				Value: 2
+
+			Display Name: Quick Capture
+			Setting id: 54
+			Widget Type: select
+			Options:
+				Display Name: ON
+				Value: 1
+
+				Display Name: OFF
+				Value: 0
+
+			Display Name: LED Blink
+			Setting id: 55
+			Widget Type: select
+			Options:
+				Display Name: OFF
+				Value: 0
+
+				Display Name: 2
+				Value: 1
+
+				Display Name: 4
+				Value: 2
+
+			Display Name: Beeps
+			Setting id: 56
+			Widget Type: select
+			Options:
+				Display Name: 100%
+				Value: 0
+
+				Display Name: 70%
+				Value: 1
+
+				Display Name: OFF
+				Value: 2
+
+			Display Name: Video Format
+			Setting id: 57
+			Widget Type: select
+			Options:
+				Display Name: NTSC
+				Value: 0
+
+				Display Name: PAL
+				Value: 1
+
+			Display Name: On Screen Display
+			Setting id: 58
+			Widget Type: select
+			Options:
+				Display Name: ON
+				Value: 1
+
+				Display Name: OFF
+				Value: 0
+
+			Display Name: Auto Off
+			Setting id: 59
+			Widget Type: select
+			Options:
+				Display Name: NEVER
+				Value: 0
+
+				Display Name: 1 MIN
+				Value: 1
+
+				Display Name: 2 MIN
+				Value: 2
+
+				Display Name: 3 MIN
+				Value: 3
+
+				Display Name: 5 MIN
+				Value: 4
+
+			Display Name: Wireless Mode
+			Setting id: 63
+			Widget Type: select
+			Options:
+				Display Name: OFF
+				Value: 0
+
+				Display Name: App
+				Value: 1
+
+				Display Name: RC
+				Value: 2
+
+				Display Name: Smart
+				Value: 4
+
+	Category: Delete
+		Commands:
+			Key: GPCAMERA_DELETE_LAST_FILE_ID
+			Display: Delete Last File
+			Precedence: 1
+
+			Key: GPCAMERA_DELETE_ALL_FILES_ID
+			Display: Delete All Files from SD Card
+			Precedence: 1
+
+		Settings:
+	Category: Camera Info
+		Commands:
+			Key: GPCAMERA_NETWORK_NAME_ID
+			Display: Name
+			Precedence: 1
+
+			Key: GPCAMERA_INFO_VERSION_ID
+			Display: Version
+			Precedence: 1
+
+			Key: GPCAMERA_LOCATE_ID
+			Display: Locate Camera
+			Precedence: 1
+
+		Settings:
+	Category: Wireless Controls
+		Commands:
+			Key: GPCAMERA_USE_CURRENT_WIRELESS_REMOTE_ID
+			Display: Use with Current Wi-Fi Remote
+			Precedence: 1
+
+			Key: GPCAMERA_USE_NEW_WIRELESS_REMOTE_ID
+			Display: Use with New Wi-Fi Remote
+			Precedence: 1
+
+		Settings:
+	Category: Camera Status
+		Commands:
+			Key: GPCAMERA_BATTERY_LEVEL_ID
+			Display: Battery Level
+			Precedence: 1
+
+			Key: GPCAMERA_SDCARD_CAPACITY_ID
+			Display: SD Card Capacity
+			Precedence: 1
+
+		Settings:
+Modes:
+	Path Segment: video
+		Display Name: Video
+		Value: 0
+
+		Path Segment: default_sub_mode
+			Display Name: Default Video Sub Mode
+			id: 1
+
+			Options:
+				Display Name: Video
+				Value: 0
+
+			Options:
+				Display Name: Time Lapse Video
+				Value: 1
+
+			Options:
+				Display Name: Video + Photo
+				Value: 2
+
+			Options:
+				Display Name: Looping
+				Value: 3
+
+		Path Segment: current_sub_mode
+			Display Name: Video Sub Mode
+			id: 68
+
+			Options:
+				Display Name: Video
+				Value: 0
+
+			Options:
+				Display Name: Time Lapse Video
+				Value: 1
+
+			Options:
+				Display Name: Video + Photo
+				Value: 2
+
+			Options:
+				Display Name: Looping
+				Value: 3
+
+		Path Segment: resolution
+			Display Name: Resolution
+			id: 2
+
+			Options:
+				Display Name: 4K
+				Value: 1
+
+			Options:
+				Display Name: 2.7K
+				Value: 4
+
+			Options:
+				Display Name: 2.7K 4:3
+				Value: 6
+
+			Options:
+				Display Name: 1440
+				Value: 7
+
+			Options:
+				Display Name: 1080 SuperView
+				Value: 8
+
+			Options:
+				Display Name: 1080
+				Value: 9
+
+			Options:
+				Display Name: 960
+				Value: 10
+
+			Options:
+				Display Name: 720 SuperView
+				Value: 11
+
+			Options:
+				Display Name: 720
+				Value: 12
+
+			Options:
+				Display Name: WVGA
+				Value: 13
+
+		Path Segment: fps
+			Display Name: Frames Per Second
+			id: 3
+
+			Options:
+				Display Name: 240
+				Value: 0
+
+			Options:
+				Display Name: 120
+				Value: 1
+
+			Options:
+				Display Name: 100
+				Value: 2
+
+			Options:
+				Display Name: 90
+				Value: 3
+
+			Options:
+				Display Name: 80
+				Value: 4
+
+			Options:
+				Display Name: 60
+				Value: 5
+
+			Options:
+				Display Name: 50
+				Value: 6
+
+			Options:
+				Display Name: 48
+				Value: 7
+
+			Options:
+				Display Name: 30
+				Value: 8
+
+			Options:
+				Display Name: 25
+				Value: 9
+
+			Options:
+				Display Name: 24
+				Value: 10
+
+			Options:
+				Display Name: 15
+				Value: 11
+
+			Options:
+				Display Name: 12.5
+				Value: 12
+
+		Path Segment: fov
+			Display Name: Field Of View
+			id: 4
+
+			Options:
+				Display Name: Wide
+				Value: 0
+
+			Options:
+				Display Name: Medium
+				Value: 1
+
+			Options:
+				Display Name: Narrow
+				Value: 2
+
+		Path Segment: timelapse_rate
+			Display Name: Interval
+			id: 5
+
+			Options:
+				Display Name: 0.5 Seconds
+				Value: 0
+
+			Options:
+				Display Name: 1 Second
+				Value: 1
+
+			Options:
+				Display Name: 2 Seconds
+				Value: 2
+
+			Options:
+				Display Name: 5 Seconds
+				Value: 3
+
+			Options:
+				Display Name: 10 Seconds
+				Value: 4
+
+			Options:
+				Display Name: 30 Seconds
+				Value: 5
+
+			Options:
+				Display Name: 60 Seconds
+				Value: 6
+
+		Path Segment: looping
+			Display Name: Interval
+			id: 6
+
+			Options:
+				Display Name: Max
+				Value: 0
+
+			Options:
+				Display Name: 5 Minutes
+				Value: 1
+
+			Options:
+				Display Name: 20 Minutes
+				Value: 2
+
+			Options:
+				Display Name: 60 Minutes
+				Value: 3
+
+			Options:
+				Display Name: 120 Minutes
+				Value: 4
+
+		Path Segment: piv
+			Display Name: Interval
+			id: 7
+
+			Options:
+				Display Name: 1 Photo / 5 Seconds
+				Value: 1
+
+			Options:
+				Display Name: 1 Photo / 10 Seconds
+				Value: 2
+
+			Options:
+				Display Name: 1 Photo / 30 Seconds
+				Value: 3
+
+			Options:
+				Display Name: 1 Photo / 60 Seconds
+				Value: 4
+
+		Path Segment: low_light
+			Display Name: Low Light
+			id: 8
+
+			Options:
+				Display Name: ON
+				Value: 1
+
+			Options:
+				Display Name: OFF
+				Value: 0
+
+		Path Segment: spot_meter
+			Display Name: Spot Meter
+			id: 9
+
+			Options:
+				Display Name: ON
+				Value: 1
+
+			Options:
+				Display Name: OFF
+				Value: 0
+
+		Path Segment: protune
+			Display Name: Protune
+			id: 10
+
+			Options:
+				Display Name: ON
+				Value: 1
+
+			Options:
+				Display Name: OFF
+				Value: 0
+
+		Path Segment: protune_white_balance
+			Display Name: White Balance
+			id: 11
+
+			Options:
+				Display Name: Auto
+				Value: 0
+
+			Options:
+				Display Name: 3000K
+				Value: 1
+
+			Options:
+				Display Name: 5500K
+				Value: 2
+
+			Options:
+				Display Name: 6500K
+				Value: 3
+
+			Options:
+				Display Name: Native
+				Value: 4
+
+		Path Segment: protune_color
+			Display Name: Color
+			id: 12
+
+			Options:
+				Display Name: GoPro Color
+				Value: 0
+
+			Options:
+				Display Name: Flat
+				Value: 1
+
+		Path Segment: protune_sharpness
+			Display Name: Sharpness
+			id: 14
+
+			Options:
+				Display Name: High
+				Value: 0
+
+			Options:
+				Display Name: Medium
+				Value: 1
+
+			Options:
+				Display Name: Low
+				Value: 2
+
+		Path Segment: protune_ev
+			Display Name: EV Comp
+			id: 15
+
+			Options:
+				Display Name: -2.0
+				Value: 8
+
+			Options:
+				Display Name: -1.5
+				Value: 7
+
+			Options:
+				Display Name: -1.0
+				Value: 6
+
+			Options:
+				Display Name: -0.5
+				Value: 5
+
+			Options:
+				Display Name: 0.0
+				Value: 4
+
+			Options:
+				Display Name: 0.5
+				Value: 3
+
+			Options:
+				Display Name: 1.0
+				Value: 2
+
+			Options:
+				Display Name: 1.5
+				Value: 1
+
+			Options:
+				Display Name: 2.0
+				Value: 0
+
+		Path Segment: protune_iso
+			Display Name: ISO Limit
+			id: 13
+
+			Options:
+				Display Name: 6400
+				Value: 0
+
+			Options:
+				Display Name: 1600
+				Value: 1
+
+			Options:
+				Display Name: 400
+				Value: 2
+
+			Options:
+				Display Name: 3200
+				Value: 3
+
+			Options:
+				Display Name: 800
+				Value: 4
+
+	Path Segment: photo
+		Display Name: Photo
+		Value: 1
+
+		Path Segment: default_sub_mode
+			Display Name: Default Photo Sub Mode
+			id: 16
+
+			Options:
+				Display Name: Single
+				Value: 0
+
+			Options:
+				Display Name: Continuous
+				Value: 1
+
+			Options:
+				Display Name: Night
+				Value: 2
+
+		Path Segment: current_sub_mode
+			Display Name: Photo Sub Mode
+			id: 69
+
+			Options:
+				Display Name: Single
+				Value: 0
+
+			Options:
+				Display Name: Continuous
+				Value: 1
+
+			Options:
+				Display Name: Night
+				Value: 2
+
+		Path Segment: continuous_rate
+			Display Name: Interval
+			id: 18
+
+			Options:
+				Display Name: 3 Frames / Second
+				Value: 0
+
+			Options:
+				Display Name: 5 Frames / Second
+				Value: 1
+
+			Options:
+				Display Name: 10 Frames / Second
+				Value: 2
+
+		Path Segment: resolution
+			Display Name: Megapixels
+			id: 17
+
+			Options:
+				Display Name: 12MP Wide
+				Value: 0
+
+			Options:
+				Display Name: 7MP Wide
+				Value: 1
+
+			Options:
+				Display Name: 7MP Med
+				Value: 2
+
+			Options:
+				Display Name: 5MP Med
+				Value: 3
+
+		Path Segment: exposure_time
+			Display Name: Shutter
+			id: 19
+
+			Options:
+				Display Name: Auto
+				Value: 0
+
+			Options:
+				Display Name: 2 Seconds
+				Value: 1
+
+			Options:
+				Display Name: 5 Seconds
+				Value: 2
+
+			Options:
+				Display Name: 10 Seconds
+				Value: 3
+
+			Options:
+				Display Name: 15 Seconds
+				Value: 4
+
+			Options:
+				Display Name: 20 Seconds
+				Value: 5
+
+			Options:
+				Display Name: 30 Seconds
+				Value: 6
+
+		Path Segment: spot_meter
+			Display Name: Spot Meter
+			id: 20
+
+			Options:
+				Display Name: ON
+				Value: 1
+
+			Options:
+				Display Name: OFF
+				Value: 0
+
+		Path Segment: protune
+			Display Name: Protune
+			id: 21
+
+			Options:
+				Display Name: ON
+				Value: 1
+
+			Options:
+				Display Name: OFF
+				Value: 0
+
+		Path Segment: protune_white_balance
+			Display Name: White Balance
+			id: 22
+
+			Options:
+				Display Name: Auto
+				Value: 0
+
+			Options:
+				Display Name: 3000K
+				Value: 1
+
+			Options:
+				Display Name: 5500K
+				Value: 2
+
+			Options:
+				Display Name: 6500K
+				Value: 3
+
+			Options:
+				Display Name: Native
+				Value: 4
+
+		Path Segment: protune_color
+			Display Name: Color
+			id: 23
+
+			Options:
+				Display Name: GoPro Color
+				Value: 0
+
+			Options:
+				Display Name: Flat
+				Value: 1
+
+		Path Segment: protune_sharpness
+			Display Name: Sharpness
+			id: 25
+
+			Options:
+				Display Name: High
+				Value: 0
+
+			Options:
+				Display Name: Medium
+				Value: 1
+
+			Options:
+				Display Name: Low
+				Value: 2
+
+		Path Segment: protune_ev
+			Display Name: EV Comp
+			id: 26
+
+			Options:
+				Display Name: -2.0
+				Value: 8
+
+			Options:
+				Display Name: -1.5
+				Value: 7
+
+			Options:
+				Display Name: -1.0
+				Value: 6
+
+			Options:
+				Display Name: -0.5
+				Value: 5
+
+			Options:
+				Display Name: 0.0
+				Value: 4
+
+			Options:
+				Display Name: 0.5
+				Value: 3
+
+			Options:
+				Display Name: 1.0
+				Value: 2
+
+			Options:
+				Display Name: 1.5
+				Value: 1
+
+			Options:
+				Display Name: 2.0
+				Value: 0
+
+		Path Segment: protune_iso
+			Display Name: ISO Limit
+			id: 24
+
+			Options:
+				Display Name: 800
+				Value: 0
+
+			Options:
+				Display Name: 400
+				Value: 1
+
+			Options:
+				Display Name: 200
+				Value: 2
+
+			Options:
+				Display Name: 100
+				Value: 3
+
+	Path Segment: multi_shot
+		Display Name: Multishot
+		Value: 2
+
+		Path Segment: default_sub_mode
+			Display Name: Default Multi-Shot Sub Mode
+			id: 27
+
+			Options:
+				Display Name: Burst
+				Value: 0
+
+			Options:
+				Display Name: Time Lapse
+				Value: 1
+
+			Options:
+				Display Name: Night Lapse
+				Value: 2
+
+		Path Segment: current_sub_mode
+			Display Name: Multi-Shot Sub Mode
+			id: 70
+
+			Options:
+				Display Name: Burst
+				Value: 0
+
+			Options:
+				Display Name: Time Lapse
+				Value: 1
+
+			Options:
+				Display Name: Night Lapse
+				Value: 2
+
+		Path Segment: exposure_time
+			Display Name: Shutter
+			id: 31
+
+			Options:
+				Display Name: Auto
+				Value: 0
+
+			Options:
+				Display Name: 2 Seconds
+				Value: 1
+
+			Options:
+				Display Name: 5 Seconds
+				Value: 2
+
+			Options:
+				Display Name: 10 Seconds
+				Value: 3
+
+			Options:
+				Display Name: 15 Seconds
+				Value: 4
+
+			Options:
+				Display Name: 20 Seconds
+				Value: 5
+
+			Options:
+				Display Name: 30 Seconds
+				Value: 6
+
+		Path Segment: burst_rate
+			Display Name: Rate
+			id: 29
+
+			Options:
+				Display Name: 3 Photos / 1 Second
+				Value: 0
+
+			Options:
+				Display Name: 5 Photos / 1 Second
+				Value: 1
+
+			Options:
+				Display Name: 10 Photos / 1 Second
+				Value: 2
+
+			Options:
+				Display Name: 10 Photos / 2 Seconds
+				Value: 3
+
+			Options:
+				Display Name: 10 Photos / 3 Seconds
+				Value: 4
+
+			Options:
+				Display Name: 30 Photos / 1 Second
+				Value: 5
+
+			Options:
+				Display Name: 30 Photos / 2 Seconds
+				Value: 6
+
+			Options:
+				Display Name: 30 Photos / 3 Seconds
+				Value: 7
+
+			Options:
+				Display Name: 30 Photos / 6 Seconds
+				Value: 8
+
+		Path Segment: timelapse_rate
+			Display Name: Interval
+			id: 30
+
+			Options:
+				Display Name: 1 Photo / 0.5 Sec
+				Value: 0
+
+			Options:
+				Display Name: 1 Photo / 1 Sec
+				Value: 1
+
+			Options:
+				Display Name: 1 Photo / 2 Sec
+				Value: 2
+
+			Options:
+				Display Name: 1 Photo / 5 Sec
+				Value: 5
+
+			Options:
+				Display Name: 1 Photo / 10 Sec
+				Value: 10
+
+			Options:
+				Display Name: 1 Photo / 30 Sec
+				Value: 30
+
+			Options:
+				Display Name: 1 Photo / 60 Sec
+				Value: 60
+
+		Path Segment: nightlapse_rate
+			Display Name: Interval
+			id: 32
+
+			Options:
+				Display Name: Continuous
+				Value: 0
+
+			Options:
+				Display Name: 4 Seconds
+				Value: 4
+
+			Options:
+				Display Name: 5 Seconds
+				Value: 5
+
+			Options:
+				Display Name: 10 Seconds
+				Value: 10
+
+			Options:
+				Display Name: 15 Seconds
+				Value: 15
+
+			Options:
+				Display Name: 20 Seconds
+				Value: 20
+
+			Options:
+				Display Name: 30 Seconds
+				Value: 30
+
+			Options:
+				Display Name: 1 Minute
+				Value: 60
+
+			Options:
+				Display Name: 2 Minutes
+				Value: 120
+
+			Options:
+				Display Name: 5 Minutes
+				Value: 300
+
+			Options:
+				Display Name: 30 Minutes
+				Value: 1800
+
+			Options:
+				Display Name: 60 Minutes
+				Value: 3600
+
+		Path Segment: resolution
+			Display Name: Megapixels
+			id: 28
+
+			Options:
+				Display Name: 12MP Wide
+				Value: 0
+
+			Options:
+				Display Name: 7MP Wide
+				Value: 1
+
+			Options:
+				Display Name: 7MP Med
+				Value: 2
+
+			Options:
+				Display Name: 5MP Med
+				Value: 3
+
+		Path Segment: spot_meter
+			Display Name: Spot Meter
+			id: 33
+
+			Options:
+				Display Name: ON
+				Value: 1
+
+			Options:
+				Display Name: OFF
+				Value: 0
+
+		Path Segment: protune
+			Display Name: Protune
+			id: 34
+
+			Options:
+				Display Name: ON
+				Value: 1
+
+			Options:
+				Display Name: OFF
+				Value: 0
+
+		Path Segment: protune_white_balance
+			Display Name: White Balance
+			id: 35
+
+			Options:
+				Display Name: Auto
+				Value: 0
+
+			Options:
+				Display Name: 3000K
+				Value: 1
+
+			Options:
+				Display Name: 5500K
+				Value: 2
+
+			Options:
+				Display Name: 6500K
+				Value: 3
+
+			Options:
+				Display Name: Native
+				Value: 4
+
+		Path Segment: protune_color
+			Display Name: Color
+			id: 36
+
+			Options:
+				Display Name: GoPro Color
+				Value: 0
+
+			Options:
+				Display Name: Flat
+				Value: 1
+
+		Path Segment: protune_sharpness
+			Display Name: Sharpness
+			id: 38
+
+			Options:
+				Display Name: High
+				Value: 0
+
+			Options:
+				Display Name: Medium
+				Value: 1
+
+			Options:
+				Display Name: Low
+				Value: 2
+
+		Path Segment: protune_ev
+			Display Name: EV Comp
+			id: 39
+
+			Options:
+				Display Name: -2.0
+				Value: 8
+
+			Options:
+				Display Name: -1.5
+				Value: 7
+
+			Options:
+				Display Name: -1.0
+				Value: 6
+
+			Options:
+				Display Name: -0.5
+				Value: 5
+
+			Options:
+				Display Name: 0.0
+				Value: 4
+
+			Options:
+				Display Name: 0.5
+				Value: 3
+
+			Options:
+				Display Name: 1.0
+				Value: 2
+
+			Options:
+				Display Name: 1.5
+				Value: 1
+
+			Options:
+				Display Name: 2.0
+				Value: 0
+
+		Path Segment: protune_iso
+			Display Name: ISO Limit
+			id: 37
+
+			Options:
+				Display Name: 800
+				Value: 0
+
+			Options:
+				Display Name: 400
+				Value: 1
+
+			Options:
+				Display Name: 200
+				Value: 2
+
+			Options:
+				Display Name: 100
+				Value: 3
+
+	Path Segment: setup
+		Display Name: Setup
+		Value: 5
+
+		Path Segment: lcd
+			Display Name: LCD Display
+			id: 72
+
+			Options:
+				Display Name: ON
+				Value: 1
+
+			Options:
+				Display Name: OFF
+				Value: 0
+
+		Path Segment: lcd_brightness
+			Display Name: LCD Brightness
+			id: 49
+
+			Options:
+				Display Name: High
+				Value: 0
+
+			Options:
+				Display Name: Medium
+				Value: 1
+
+			Options:
+				Display Name: Low
+				Value: 2
+
+		Path Segment: lcd_lock
+			Display Name: LCD Lock
+			id: 50
+
+			Options:
+				Display Name: ON
+				Value: 1
+
+			Options:
+				Display Name: OFF
+				Value: 0
+
+		Path Segment: lcd_sleep
+			Display Name: LCD Sleep
+			id: 51
+
+			Options:
+				Display Name: Never
+				Value: 0
+
+			Options:
+				Display Name: 1 MIN
+				Value: 1
+
+			Options:
+				Display Name: 2 MIN
+				Value: 2
+
+			Options:
+				Display Name: 3 MIN
+				Value: 3
+
+		Path Segment: orientation
+			Display Name: Orientation
+			id: 52
+
+			Options:
+				Display Name: Up
+				Value: 1
+
+			Options:
+				Display Name: Down
+				Value: 2
+
+			Options:
+				Display Name: Auto
+				Value: 0
+
+		Path Segment: default_app_mode
+			Display Name: Default Mode
+			id: 53
+
+			Options:
+				Display Name: Video
+				Value: 0
+
+			Options:
+				Display Name: Photo
+				Value: 1
+
+			Options:
+				Display Name: Multi-shot
+				Value: 2
+
+		Path Segment: quick_capture
+			Display Name: Quick Capture
+			id: 54
+
+			Options:
+				Display Name: ON
+				Value: 1
+
+			Options:
+				Display Name: OFF
+				Value: 0
+
+		Path Segment: led
+			Display Name: LED Blink
+			id: 55
+
+			Options:
+				Display Name: OFF
+				Value: 0
+
+			Options:
+				Display Name: 2
+				Value: 1
+
+			Options:
+				Display Name: 4
+				Value: 2
+
+		Path Segment: beep_volume
+			Display Name: Beeps
+			id: 56
+
+			Options:
+				Display Name: 100%
+				Value: 0
+
+			Options:
+				Display Name: 70%
+				Value: 1
+
+			Options:
+				Display Name: OFF
+				Value: 2
+
+		Path Segment: video_format
+			Display Name: Video Format
+			id: 57
+
+			Options:
+				Display Name: NTSC
+				Value: 0
+
+			Options:
+				Display Name: PAL
+				Value: 1
+
+		Path Segment: osd
+			Display Name: On Screen Display
+			id: 58
+
+			Options:
+				Display Name: ON
+				Value: 1
+
+			Options:
+				Display Name: OFF
+				Value: 0
+
+		Path Segment: auto_power_down
+			Display Name: Auto Off
+			id: 59
+
+			Options:
+				Display Name: NEVER
+				Value: 0
+
+			Options:
+				Display Name: 1 MIN
+				Value: 1
+
+			Options:
+				Display Name: 2 MIN
+				Value: 2
+
+			Options:
+				Display Name: 3 MIN
+				Value: 3
+
+			Options:
+				Display Name: 5 MIN
+				Value: 4
+
+		Path Segment: wireless_mode
+			Display Name: Wireless Mode
+			id: 63
+
+			Options:
+				Display Name: OFF
+				Value: 0
+
+			Options:
+				Display Name: App
+				Value: 1
+
+			Options:
+				Display Name: RC
+				Value: 2
+
+			Options:
+				Display Name: Smart
+				Value: 4
+
+		Path Segment: stream_gop_size
+			Display Name: Secondary Stream GOP Size
+			id: 60
+
+			Options:
+				Display Name: Default
+				Value: 0
+
+			Options:
+				Display Name: 3
+				Value: 3
+
+			Options:
+				Display Name: 4
+				Value: 4
+
+			Options:
+				Display Name: 8
+				Value: 8
+
+			Options:
+				Display Name: 15
+				Value: 15
+
+			Options:
+				Display Name: 30
+				Value: 30
+
+		Path Segment: stream_idr_interval
+			Display Name: Secondary Stream IDR Interval
+			id: 61
+
+			Options:
+				Display Name: Default
+				Value: 0
+
+			Options:
+				Display Name: 1
+				Value: 1
+
+			Options:
+				Display Name: 2
+				Value: 2
+
+			Options:
+				Display Name: 4
+				Value: 4
+
+		Path Segment: stream_bit_rate
+			Display Name: Secondary Stream Bit Rate
+			id: 62
+
+			Options:
+				Display Name: 250 Kbps
+				Value: 250000
+
+			Options:
+				Display Name: 400 Kbps
+				Value: 400000
+
+			Options:
+				Display Name: 600 Kbps
+				Value: 600000
+
+			Options:
+				Display Name: 700 Kbps
+				Value: 700000
+
+			Options:
+				Display Name: 800 Kbps
+				Value: 800000
+
+			Options:
+				Display Name: 1 Mbps
+				Value: 1000000
+
+			Options:
+				Display Name: 1.2 Mbps
+				Value: 1200000
+
+			Options:
+				Display Name: 1.6 Mbps
+				Value: 1600000
+
+			Options:
+				Display Name: 2 Mbps
+				Value: 2000000
+
+			Options:
+				Display Name: 2.4 Mbps
+				Value: 2400000
+
+		Path Segment: stream_window_size
+			Display Name: Secondary Stream Window Size
+			id: 64
+
+			Options:
+				Display Name: Default
+				Value: 0
+
+			Options:
+				Display Name: 240
+				Value: 1
+
+			Options:
+				Display Name: 240 3:4 Subsample
+				Value: 2
+
+			Options:
+				Display Name: 240 1:2 Subsample
+				Value: 3
+
+			Options:
+				Display Name: 480
+				Value: 4
+
+			Options:
+				Display Name: 480 3:4 Subsample
+				Value: 5
+
+			Options:
+				Display Name: 480 1:2 Subsample
+				Value: 6
