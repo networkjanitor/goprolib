@@ -238,14 +238,14 @@ class HERO4:
         for key, value in error_obj:
             print("Undocumented Key,Value pair: {key} = {value}".format(key=key, value=value))
 
-    def download_all(self, url='/', path='.'):
+    def download_all(self, url='/', path='.', delete_after_download=False):
         medialist = self._media_api(url)
         folders = re.findall('<a class="link" href="(?P<f>.*?/)">.*?</a>', medialist)
         for folder in folders:
-            self.download_all(url + folder, path=path)
+            self.download_all(url + folder, path=path, delete_after_download=delete_after_download)
         files = re.findall('<a class="link" href="(?P<f>[^/]*?)">.*?</a>', medialist)
         for file in files:
-            self.download(url, path + url, file)
+            self.download(url, path + url, file, delete_after_download)
 
     def download(self, url, directory, file, delete_after_download=False):
         gp_filepath = url + file
@@ -254,7 +254,7 @@ class HERO4:
             os.makedirs(directory)
         except FileExistsError:
             pass
-        while os.path.isfile(directory + file):
+        while os.path.isfile(directory + file) and file != 'leinfo.sav':
             try:
                 filename, ext = file.rsplit(sep='.', maxsplit=1)
             except ValueError:
@@ -265,7 +265,7 @@ class HERO4:
             with urllib.request.urlopen(url) as resp, open(directory + file, 'wb') as f:
                 data = resp.read()
                 f.write(data)
-                if not delete_after_download:
+                if delete_after_download:
                     self.delete(gp_filepath)
         except Exception as e:
             print(str(e) + ' at ' + url)
@@ -287,16 +287,27 @@ class HERO4:
             return value.value
         return value
 
-    def set_setting(self, key, value, params=''):
+    def set_setting(self, value, key=None, params=''):
+        if key is None:
+            try:
+                key = gp_settings.reverse_lookup(value)
+            except gp_exceptions.KeyNotFoundException:
+                return False
+        else:
+            key = self._get_enum_value(key)
+        value = self._get_enum_value(value)
         self._command_api(gp_commands.Cmd.GPCAMERA_SETTING.format(key, value), params)
+
+    def shutter(self, capture):
+        if capture:
+            self._command_api(gp_commands.Cmd.GPCAMERA_SHUTTER.format(1))
+        else:
+            self._command_api(gp_commands.Cmd.GPCAMERA_SHUTTER.format(0))
 
 
 if __name__ == '__main__':
     h4 = HERO4()
     h4.autoconfigure()
-    h4.set_mode(gp_stats.App.mode.MULTISHOT, gp_stats.App.sub_mode.NIGHTLAPSE)
-    print('test')
-    h4.set_mode(gp_stats.App.mode.VIDEO)
     h4.watch_status()
     # h4.dump_all()
     # h4.download_all(path='/media/xyoz/XYOZ-INT1000E/Pictures/2016_07_ScriptedTimelapseExperiments')
