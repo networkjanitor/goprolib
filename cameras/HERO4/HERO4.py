@@ -6,6 +6,7 @@ import os
 import os.path
 import urllib.request
 
+import cameras.HERO4.enum.exceptions as gpExceptions
 import cameras.HERO4.enum.settings as gpSettings
 import cameras.HERO4.enum.status as gpStats
 
@@ -137,47 +138,67 @@ class HERO4:
 
         _errors = []
         _status = []
+        _setting = []
 
         for key in status['status']:
             try:
-                stat_key, stat_val = gpStats.Status.lookup(key, status['status'][key])
+                stat_key, stat_val = gpStats.lookup(key, status['status'][key])
                 _status.append((stat_key, stat_val))
-            except gpStats.ValueForExistingKeyNotFoundException as e:
+            except gpExceptions.ValueForExistingKeyNotFoundException as e:
                 stat_key = e.found_key
                 stat_val = e.search_value
                 _status.append((stat_key, stat_val))
-            except gpStats.KeyNotFoundException as e:
+            except gpExceptions.KeyNotFoundException as e:
                 stat_key = e.search_key
                 stat_val = status['status'][key]
                 _status.append((stat_key, stat_val))
 
         for setting in status['settings']:
             try:
-                stat_setting, option = self._find_value_and_setting(setting, status['settings'][setting])
-
+                try:
+                    sett_key, sett_val = gpSettings.lookup(setting, status['settings'][setting])
+                    _setting.append((sett_key, sett_val))
+                except gpExceptions.ValueForExistingKeyNotFoundException as e:
+                    sett_key = e.found_key
+                    sett_val = e.search_value
+                    _setting.append((sett_key, sett_val))
+                except gpExceptions.KeyNotFoundException as e:
+                    sett_key = e.search_key
+                    sett_val = status['settings'][setting]
+                    _errors.append((sett_key, sett_val))
                 # print('Group: {group} Name: {name} = {value}'.format(name=stat_setting['display_name'].ljust(30),value=option['display_name'],group=stat_setting['path_segment'].ljust(20)))
             except:
                 _errors.append((setting, status['settings'][setting]))
 
-        return sorted(_status, key=lambda status: str(status[0])), sorted(_errors, key=lambda setting: str(setting[0]))
+        return sorted(_status, key=lambda status: str(status[0])), \
+               sorted(_setting, key=lambda setting: str(setting[0])), \
+               sorted(_errors, key=lambda error: str(error[0]))
 
     def watch_status(self):
         old_status_obj = None
+        old_setting_obj = None
         old_error_obj = None
         while True:
-            status_obj, error_obj = self._get_status()
-            if old_status_obj is None and old_error_obj is None:
+            status_obj, setting_obj, error_obj = self._get_status()
+            if old_status_obj is None and old_error_obj is None and old_setting_obj is None:
                 old_status_obj = status_obj
+                old_setting_obj = setting_obj
                 old_error_obj = error_obj
-                self.print_status(status_obj, error_obj)
+                self.print_status(status_obj, setting_obj, error_obj)
 
             # compare status
             for key,value in status_obj:
                 for old_key, old_value in old_status_obj:
                     if key.value == old_key.value and str(key) != 'System.CURRENT_TIME_MSEC' and str(key) != 'Setup.DATE_TIME':
-
                         if value != old_value:
-                            print('{name}: OLD: {old_val} NEW: {new_val}'.format(name=str(key).ljust(40),old_val=str(old_value).ljust(5),new_val=str(value).ljust(5)))
+                            print('STATUS: {name}: OLD: {old_val} NEW: {new_val}'.format(name=str(key).ljust(40),old_val=str(old_value).ljust(40),new_val=str(value).ljust(40)))
+
+            # compare setting
+            for key,value in setting_obj:
+                for old_key, old_value in old_setting_obj:
+                    if key.value == old_key.value and str(key) != 'System.CURRENT_TIME_MSEC' and str(key) != 'Setup.DATE_TIME':
+                        if value != old_value:
+                            print('SETTING: {name}: OLD: {old_val} NEW: {new_val}'.format(name=str(key).ljust(39),old_val=str(old_value).ljust(40),new_val=str(value).ljust(40)))
 
             # compare errors
             for key,value in error_obj:
@@ -186,17 +207,21 @@ class HERO4:
                         if value != old_value:
                             print('UNDOCUMENTED: {name}: OLD: {old_val} NEW: {new_val}'.format(name=str(key).ljust(40),old_val=str(old_value).ljust(5),new_val=str(value).ljust(5)))
             old_status_obj = status_obj
+            old_setting_obj = setting_obj
             old_error_obj = error_obj
 
 
 
 
-    def print_status(self, status_obj=None, error_obj=None):
-        if status_obj is None and error_obj is None:
-            status_obj, error_obj = self._get_status()
+    def print_status(self, status_obj=None, setting_obj=None, error_obj=None):
+        if status_obj is None and error_obj is None and setting_obj is None:
+            status_obj, setting_obj, error_obj = self._get_status()
 
         for stat_key,stat_val in status_obj:
-            print('Name: {name} = {value}'.format(name=str(stat_key).ljust(40),value=stat_val))
+            print('STATUS: {name} = {value}'.format(name=str(stat_key).ljust(40),value=stat_val))
+
+        for sett_key,sett_val in setting_obj:
+            print('SETTING: {name} = {value}'.format(name=str(sett_key).ljust(39),value=sett_val))
 
         for key, value in error_obj:
             print("Undocumented Key,Value pair: {key} = {value}".format(key=key, value=value))
@@ -237,10 +262,16 @@ class HERO4:
     def delete(self, file):
         self._command_api(method=self._find_command('GPCAMERA_DELETE_FILE_ID')['url'] + '?p=' + file)
 
+    def set_mode(self, mode, sub_mode):
+        mode = gpStats.App.mode(new_mode.__class__.__qualname__.split('.')[0].upper())
+        gpStats.App.mode.
+        print(mode)
 
 if __name__ == '__main__':
     h4 = HERO4()
     h4._autoconfigure()
+    h4.mode(gpSettings.MultiShot.current_sub_mode.NIGHTLAPSE)
+    h4.mode(gpStats.App.sub_mode.LOOPING)
     h4.watch_status()
     #h4.dump_all()
     # h4.download_all(path='/media/xyoz/XYOZ-INT1000E/Pictures/2016_07_ScriptedTimelapseExperiments')
