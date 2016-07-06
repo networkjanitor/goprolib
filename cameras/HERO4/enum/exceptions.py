@@ -10,7 +10,8 @@ class KeyNotFoundException(Exception):
 
 class ValueForExistingKeyNotFoundException(Exception):
     # the name is terrible, BUT it is descriptive
-    def __init__(self, search_key, search_value, found_key, message='No value information could be found for key {key} and value {value}'):
+    def __init__(self, search_key, search_value, found_key,
+                 message='No value information could be found for key {key} and value {value}'):
         message = message.format(key=search_key, value=search_value)
         # Call the base class constructor with the parameters it needs
         super(ValueForExistingKeyNotFoundException, self).__init__(message)

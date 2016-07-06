@@ -77,7 +77,7 @@ def lookup(key, value=None):
             else:
                 # Only key requested
                 return key_lookup
-        except enum_exceptions.KeyNotFoundException as e:
+        except enum_exceptions.KeyNotFoundException:
             # The key way not found in this class, catch exception and proceed to next class
             pass
     # Key was not found in any classes inside of this module, raise exception and exit
@@ -156,6 +156,7 @@ class Video(aenum.Enum):
         TIMELAPSE_VIDEO = 1
         VIDEO_AND_PHOTO = 2
         LOOPING = 3
+
     DEFAULT_SUB_MODE = 1
 
     # noinspection PyPep8Naming
@@ -165,6 +166,7 @@ class Video(aenum.Enum):
         TIMELAPSE_VIDEO = 1
         VIDEO_AND_PHOTO = 2
         LOOPING = 3
+
     CURRENT_SUB_MODE = 68
 
     # noinspection PyPep8Naming
@@ -182,6 +184,7 @@ class Video(aenum.Enum):
         HD_720_SuperView = 11
         HD_720 = 11
         WVGA = 13
+
     RESOLUTION = 2
 
     # noinspection PyPep8Naming
@@ -200,6 +203,7 @@ class Video(aenum.Enum):
         FPS_24 = 10
         FPS_15 = 11
         FPS_12_5 = 12
+
     FPS = 3
 
     # noinspection PyPep8Naming
@@ -208,6 +212,7 @@ class Video(aenum.Enum):
         WIDE = 0
         MEDIUM = 1
         NARROW = 2
+
     FOV = 4
 
     # noinspection PyPep8Naming
@@ -220,6 +225,7 @@ class Video(aenum.Enum):
         SEC_10 = 4
         SEC_30 = 5
         SEC_60 = 6
+
     TIMELAPSE_RATE = 5
 
     # noinspection PyPep8Naming
@@ -230,6 +236,7 @@ class Video(aenum.Enum):
         MIN_20 = 2
         MIN_60 = 3
         MIN_120 = 4
+
     LOOPING = 6
 
     # noinspection PyPep8Naming
@@ -239,6 +246,7 @@ class Video(aenum.Enum):
         SEC_10 = 2
         SEC_30 = 3
         SEC_60 = 4
+
     PIV = 7
 
     # noinspection PyPep8Naming
@@ -246,6 +254,7 @@ class Video(aenum.Enum):
     class low_light(aenum.Enum):
         OFF = 0
         ON = 1
+
     LOW_LIGHT = 8
 
     # noinspection PyPep8Naming
@@ -253,6 +262,7 @@ class Video(aenum.Enum):
     class spot_meter(aenum.Enum):
         OFF = 0
         ON = 1
+
     SPOT_METER = 9
 
     # noinspection PyPep8Naming
@@ -260,6 +270,7 @@ class Video(aenum.Enum):
     class protune(aenum.Enum):
         OFF = 0
         ON = 1
+
     PROTUNE = 10
 
     # noinspection PyPep8Naming
@@ -270,6 +281,7 @@ class Video(aenum.Enum):
         WB_5500K = 2
         WB_6500K = 3
         NATIVE = 4
+
     PROTUNE_WHITE_BALANCE = 11
 
     # noinspection PyPep8Naming
@@ -277,6 +289,7 @@ class Video(aenum.Enum):
     class protune_color(aenum.Enum):
         GOPRO_COLOR = 0
         FLAT = 1
+
     PROTUNE_COLOR = 12
 
     # noinspection PyPep8Naming
@@ -285,6 +298,7 @@ class Video(aenum.Enum):
         HIGH = 0
         MEDIUM = 1
         LOW = 2
+
     PROTUNE_SHARPNESS = 14
 
     # noinspection PyPep8Naming
@@ -299,6 +313,7 @@ class Video(aenum.Enum):
         PLUS_1 = 2
         PLUS_1_5 = 1
         PLUS_2 = 0
+
     PROTUNE_EV = 15
 
     # noinspection PyPep8Naming
@@ -308,7 +323,8 @@ class Video(aenum.Enum):
         ISO_1600 = 1
         ISO_400 = 2
         ISO_3200 = 3
-        ISO_800 = 4 
+        ISO_800 = 4
+
     PROTUNE_ISO = 13
 
 
@@ -320,6 +336,7 @@ class Photo(aenum.Enum):
         SINGLE = 0
         CONTINUOUS = 1
         NIGHT = 2
+
     DEFAULT_SUB_MODE = 16
 
     # noinspection PyPep8Naming
@@ -328,6 +345,7 @@ class Photo(aenum.Enum):
         SINGLE = 0
         CONTINUOUS = 1
         NIGHT = 2
+
     CURRENT_SUB_MODE = 69
 
     # noinspection PyPep8Naming
@@ -336,6 +354,7 @@ class Photo(aenum.Enum):
         FRAMES_3_SECOND_1 = 0
         FRAMES_5_SECOND_1 = 1
         FRAMES_10_SECOND_1 = 2
+
     CONTINUOUS_RATE = 18
 
     # noinspection PyPep8Naming
@@ -345,6 +364,7 @@ class Photo(aenum.Enum):
         WIDE_7MP = 1
         MEDIUM_7MP = 2
         MEDIUM_5MP = 3
+
     RESOLUTION = 17
 
     # noinspection PyPep8Naming
@@ -357,6 +377,7 @@ class Photo(aenum.Enum):
         SEC_15 = 4
         SEC_20 = 5
         SEC_30 = 6
+
     EXPOSURE_TIME = 19
 
     # noinspection PyPep8Naming
@@ -364,6 +385,7 @@ class Photo(aenum.Enum):
     class spot_meter(aenum.Enum):
         OFF = 0
         ON = 1
+
     SPOT_METER = 20
 
     # noinspection PyPep8Naming
@@ -371,6 +393,7 @@ class Photo(aenum.Enum):
     class protune(aenum.Enum):
         OFF = 0
         ON = 1
+
     PROTUNE = 21
 
     # noinspection PyPep8Naming
@@ -381,6 +404,7 @@ class Photo(aenum.Enum):
         WB_5500K = 2
         WB_6500K = 3
         NATIVE = 4
+
     PROTUNE_WHITE_BALANCE = 22
 
     # noinspection PyPep8Naming
@@ -388,6 +412,7 @@ class Photo(aenum.Enum):
     class protune_color(aenum.Enum):
         GOPRO_COLOR = 0
         FLAT = 1
+
     PROTUNE_COLOR = 23
 
     # noinspection PyPep8Naming
@@ -396,6 +421,7 @@ class Photo(aenum.Enum):
         HIGH = 0
         MEDIUM = 1
         LOW = 2
+
     PROTUNE_SHARPNESS = 25
 
     # noinspection PyPep8Naming
@@ -410,6 +436,7 @@ class Photo(aenum.Enum):
         PLUS_1 = 2
         PLUS_1_5 = 1
         PLUS_2 = 0
+
     PROTUNE_EV = 26
 
     # noinspection PyPep8Naming
@@ -419,6 +446,7 @@ class Photo(aenum.Enum):
         ISO_400 = 1
         ISO_200 = 2
         ISO_100 = 3
+
     PROTUNE_ISO = 24
 
 
@@ -430,6 +458,7 @@ class MultiShot(aenum.Enum):
         BURST = 0
         TIMELAPSE = 1
         NIGHTLAPSE = 2
+
     DEFAULT_SUB_MODE = 27
 
     # noinspection PyPep8Naming
@@ -438,6 +467,7 @@ class MultiShot(aenum.Enum):
         BURST = 0
         TIMELAPSE = 1
         NIGHTLAPSE = 2
+
     CURRENT_SUB_MODE = 69
 
     # noinspection PyPep8Naming
@@ -450,6 +480,7 @@ class MultiShot(aenum.Enum):
         SEC_15 = 4
         SEC_20 = 5
         SEC_30 = 6
+
     EXPOSURE_TIME = 31
 
     # noinspection PyPep8Naming
@@ -464,6 +495,7 @@ class MultiShot(aenum.Enum):
         SEC_2_PHOTO_30 = 6
         SEC_3_PHOTO_30 = 7
         SEC_6_PHOTO_30 = 8
+
     CONTINUOUS_RATE = 29
 
     # noinspection PyPep8Naming
@@ -476,6 +508,7 @@ class MultiShot(aenum.Enum):
         SEC_10 = 10
         SEC_30 = 30
         SEC_60 = 60
+
     TIMELAPSE_RATE = 30
 
     # noinspection PyPep8Naming
@@ -503,6 +536,7 @@ class MultiShot(aenum.Enum):
 
         SEC_3600 = 3600
         MIN_60 = 3600
+
     NIGHTLAPSE_RATE = 32
 
     # noinspection PyPep8Naming
@@ -512,6 +546,7 @@ class MultiShot(aenum.Enum):
         WIDE_7MP = 1
         MEDIUM_7MP = 2
         MEDIUM_5MP = 3
+
     RESOLUTION = 28
 
     # noinspection PyPep8Naming
@@ -519,6 +554,7 @@ class MultiShot(aenum.Enum):
     class spot_meter(aenum.Enum):
         OFF = 0
         ON = 1
+
     SPOT_METER = 33
 
     # noinspection PyPep8Naming
@@ -526,6 +562,7 @@ class MultiShot(aenum.Enum):
     class protune(aenum.Enum):
         OFF = 0
         ON = 1
+
     PROTUNE = 34
 
     # noinspection PyPep8Naming
@@ -536,6 +573,7 @@ class MultiShot(aenum.Enum):
         WB_5500K = 2
         WB_6500K = 3
         NATIVE = 4
+
     PROTUNE_WHITE_BALANCE = 35
 
     # noinspection PyPep8Naming
@@ -543,6 +581,7 @@ class MultiShot(aenum.Enum):
     class protune_color(aenum.Enum):
         GOPRO_COLOR = 0
         FLAT = 1
+
     PROTUNE_COLOR = 36
 
     # noinspection PyPep8Naming
@@ -551,6 +590,7 @@ class MultiShot(aenum.Enum):
         HIGH = 0
         MEDIUM = 1
         LOW = 2
+
     PROTUNE_SHARPNESS = 38
 
     # noinspection PyPep8Naming
@@ -565,6 +605,7 @@ class MultiShot(aenum.Enum):
         PLUS_1 = 2
         PLUS_1_5 = 1
         PLUS_2 = 0
+
     PROTUNE_EV = 39
 
     # noinspection PyPep8Naming
@@ -574,6 +615,7 @@ class MultiShot(aenum.Enum):
         ISO_400 = 1
         ISO_200 = 2
         ISO_100 = 3
+
     PROTUNE_ISO = 37
 
 
@@ -584,6 +626,7 @@ class Setup(aenum.Enum):
     class lcd(aenum.Enum):
         OFF = 0
         ON = 1
+
     LCD = 72
 
     # noinspection PyPep8Naming
@@ -592,6 +635,7 @@ class Setup(aenum.Enum):
         HIGH = 0
         MEDIUM = 1
         LOW = 2
+
     LCD_BRIGHTNESS = 49
 
     # noinspection PyPep8Naming
@@ -599,6 +643,7 @@ class Setup(aenum.Enum):
     class lcd_lock(aenum.Enum):
         OFF = 0
         ON = 1
+
     LCD_LOCK = 50
 
     # noinspection PyPep8Naming
@@ -608,6 +653,7 @@ class Setup(aenum.Enum):
         MIN_1 = 1
         MIN_2 = 2
         MIN_3 = 3
+
     LCD_SLEEP = 51
 
     # noinspection PyPep8Naming
@@ -616,6 +662,7 @@ class Setup(aenum.Enum):
         AUTO = 0
         UP = 1
         DOWN = 2
+
     ORIENTATION = 52
 
     # noinspection PyPep8Naming
@@ -624,6 +671,7 @@ class Setup(aenum.Enum):
         VIDEO = 0
         PHOTO = 1
         MULTI_SHOT = 2
+
     DEFAULT_APP_MODE = 53
 
     # noinspection PyPep8Naming
@@ -631,6 +679,7 @@ class Setup(aenum.Enum):
     class quick_capture(aenum.Enum):
         OFF = 0
         ON = 1
+
     QUICK_CAPTURE = 54
 
     # noinspection PyPep8Naming
@@ -639,6 +688,7 @@ class Setup(aenum.Enum):
         OFF = 0
         LED_2 = 1
         LED_4 = 2
+
     LED = 55
 
     # noinspection PyPep8Naming
@@ -649,6 +699,7 @@ class Setup(aenum.Enum):
         PERCENT_70 = 1
         FULL = 0
         PERCENT_100 = 0
+
     BEEP_VOLUME = 56
 
     # noinspection PyPep8Naming
@@ -656,6 +707,7 @@ class Setup(aenum.Enum):
     class video_format(aenum.Enum):
         NTSC = 0
         PAL = 1
+
     VIDEO_FORMAT = 57
 
     # noinspection PyPep8Naming
@@ -663,6 +715,7 @@ class Setup(aenum.Enum):
     class osd(aenum.Enum):
         OFF = 0
         ON = 1
+
     OSD = 58
 
     # noinspection PyPep8Naming
@@ -673,6 +726,7 @@ class Setup(aenum.Enum):
         MIN_2 = 2
         MIN_3 = 3
         MIN_5 = 5
+
     AUTO_POWER_DOWN = 58
 
     # noinspection PyPep8Naming
@@ -682,6 +736,7 @@ class Setup(aenum.Enum):
         APP = 1
         RC = 2
         SMART = 4
+
     WIRELESS_MODE = 63
 
     # noinspection PyPep8Naming
@@ -693,6 +748,7 @@ class Setup(aenum.Enum):
         VALUE_8 = 8
         VALUE_15 = 15
         VALUE_30 = 30
+
     STREAM_GOP_SIZE = 60
 
     # noinspection PyPep8Naming
@@ -702,6 +758,7 @@ class Setup(aenum.Enum):
         VALUE_1 = 1
         VALUE_2 = 2
         VALUE_4 = 4
+
     STREAM_IDR_INTERVAL = 61
 
     # noinspection PyPep8Naming
@@ -717,6 +774,7 @@ class Setup(aenum.Enum):
         MBIT_PS_1_6 = 1600000
         MBIT_PS_2 = 2000000
         MBIT_PS_2_4 = 2400000
+
     STREAM_BIT_RATE = 62
 
     # noinspection PyPep8Naming
@@ -728,6 +786,7 @@ class Setup(aenum.Enum):
         DR_480 = 4
         DR_480_3_4_SUBSAMPLE = 5
         DR_480_1_2_SUBSAMPLE = 6
+
     STREAM_WINDOW_SIZE = 64
 
 
@@ -737,12 +796,9 @@ if __name__ == '__main__':
     try:
         x = Video(Video.current_sub_mode).current_sub_mode()
 
-
         key, value = lookup(19, 0)
         print(key)
         print(value)
     except enum_exceptions.ValueForExistingKeyNotFoundException as e:
         print(key)
         print(e)
-
-

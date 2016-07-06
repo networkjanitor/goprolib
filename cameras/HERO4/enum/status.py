@@ -77,7 +77,7 @@ def lookup(key, value=None):
             else:
                 # Only key requested
                 return key_lookup
-        except enum_exceptions.KeyNotFoundException as e:
+        except enum_exceptions.KeyNotFoundException:
             # The key way not found in this class, catch exception and proceed to next class
             pass
     # Key was not found in any classes inside of this module, raise exception and exit
@@ -229,6 +229,7 @@ class System(aenum.Enum):
     class camera_locate_active(aenum.Enum):
         IS_ACTIVE = 1
         IS_NOT_ACTIVE = 0
+
     CAMERA_LOCATE_ACTIVE = 45
 
     # noinspection PyPep8Naming

@@ -15,8 +15,9 @@ class Heartbeat:
         if sys.version_info.major >= 3:
             self.keepalive_message = bytes(self.keepalive_message, "utf-8")
 
-    def get_command_msg(self, id):
-        return "_GPHD_:%u:%u:%d:%1lf\n" % (0, 0, id, 0)
+    @staticmethod
+    def get_command_msg(payload):
+        return "_GPHD_:%u:%u:%d:%1lf\n" % (0, 0, payload, 0)
 
     def start_pulse(self):
         if self.thread is None:
