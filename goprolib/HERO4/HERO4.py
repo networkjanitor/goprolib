@@ -43,35 +43,32 @@ class HERO4:
             self.connection = 'Not Connected'
             return {}
 
-    def autoconfigure(self):
-        self.gpControl = self._command_api()
-        return
-        print('Commands:')
-        # for cmd in self.gpControl['commands']:
-        #    print('Key: {key}\n    Widget: {widget_type} \n    Display: {display_name} \n    URL: {url} \n'.format(widget_type=cmd['widget_type'], display_name=cmd['display_name'], url=cmd['url'], key=cmd['key']))
+    @staticmethod
+    def _get_enum_value(value):
+        """
+        If provided value is an enum element, return value of element
+        :param value:
+        :return:
+        """
+        if isinstance(value, (aenum.Enum, aenum.EnumMeta, aenum.EnumConstants, aenum.Constant)):
+            return value.value
+        return value
 
-        for dh in self.gpControl['display_hints']:
-            print('\nCategory: {}'.format(dh['display_name']))
-            print('    Commands:')
-            for cmd in dh['commands']:
-                print('        Precedence: {pre}\n        Key: {key}\n        Display: {display}\n'.format(
-                    pre=cmd['precedence'], key=cmd['command_key'],
-                    display=(self._find_command(cmd['command_key'])['display_name'])))
-            print('    Settings:')
-            for setting in dh['settings']:
-                display_setting = self._find_setting(setting['setting_id'])
-                print('        Display Name: {display}\n        Widget Type: {widget}'.format(
-                    display=display_setting['display_name'], widget=setting['widget_type']))
-                print('        Options:')
-                for option in display_setting['options']:
-                    print('             Display Name: {display}\n             Value: {value}\n'.format(
-                        display=option['display_name'], value=option['value']))
+    # find stuff in gpControl json
 
     def _find_command(self, key):
         for cmd in self.gpControl['commands']:
             if str(cmd['key']) == str(key):
                 return cmd
         raise NotImplementedError('Command with the key {key} is not available in this GoPro'.format(id=key))
+
+    def _find_status(self, status_key):
+        for group in self.gpControl['status']['groups']:
+            for field in group['fields']:
+                if str(field['id']) == status_key:
+                    return group, field
+        raise NotImplementedError(
+            'No information to the status value {status} found in this GoPro'.format(status=status_key))
 
     def _find_setting(self, setting_key):
         for mode in self.gpControl['modes']:
@@ -90,6 +87,13 @@ class HERO4:
         raise NotImplementedError(
             'Option with the value {value} in the setting with the id {setting} is not available in this GoPro'.format(
                 value=value_key, setting=setting['id']))
+
+
+    # load gpControl json (describes api endpoints, key/values, display hints etc)
+    def autoconfigure(self):
+        self.gpControl = self._command_api()
+
+    # write api_dump from current gpControl object
 
     def dump_all(self, path='api_dump'):
         dumptext = ''
@@ -129,13 +133,7 @@ class HERO4:
         with open(path, 'w') as f:
             f.write(dumptext)
 
-    def _find_status(self, status_key):
-        for group in self.gpControl['status']['groups']:
-            for field in group['fields']:
-                if str(field['id']) == status_key:
-                    return group, field
-        raise NotImplementedError(
-            'No information to the status value {status} found in this GoPro'.format(status=status_key))
+    # load and interpret current camera status (status + settings object) on /status
 
     def _get_status(self):
         status = self._command_api('/status')
@@ -282,12 +280,6 @@ class HERO4:
         else:
             self._command_api(gp_commands.Cmd.GPCAMERA_SUBMODE.format(mode, sub_mode))
 
-    @staticmethod
-    def _get_enum_value(value):
-        if isinstance(value, (aenum.Enum, aenum.EnumMeta, aenum.EnumConstants, aenum.Constant)):
-            return value.value
-        return value
-
     def set_setting(self, value, key=None, params=''):
         if key is None:
             try:
@@ -311,7 +303,6 @@ def main():
     h4.autoconfigure()
     h4.watch_status()
     # h4.dump_all()
-    # h4.download_all(path='/media/xyoz/XYOZ-INT1000E/Pictures/2016_07_ScriptedTimelapseExperiments')
 
 if __name__ == '__main__':
     main()
