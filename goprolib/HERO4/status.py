@@ -1,7 +1,9 @@
-import aenum
 import inspect
 import sys
-import cameras.HERO4.enum.exceptions as enum_exceptions
+
+import aenum
+
+import goprolib.HERO4.exceptions as enum_exceptions
 
 """
 How keys and values are structured:

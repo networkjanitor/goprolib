@@ -1,1 +1,1 @@
-import cameras.HERO4
+import goprolib.HERO4

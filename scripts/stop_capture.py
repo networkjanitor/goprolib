@@ -1,4 +1,4 @@
-import cameras.HERO4.HERO4 as HERO4
+import goprolib.HERO4.HERO4 as HERO4
 
 
 if __name__ == '__main__':

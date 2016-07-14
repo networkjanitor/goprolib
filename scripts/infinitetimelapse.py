@@ -1,12 +1,10 @@
-import cameras.HERO4.HERO4 as HERO4
-
-import cameras.HERO4.enum.status as gp_stats
-import cameras.HERO4.enum.settings as gp_settings
-
-import requests
-
-import time
 import datetime
+import time
+
+import goprolib.HERO4.status as gp_stats
+
+import goprolib.HERO4.HERO4 as HERO4
+import goprolib.HERO4.settings as gp_settings
 
 
 def get_suntimes():

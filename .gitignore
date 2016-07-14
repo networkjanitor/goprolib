@@ -1,3 +1,6 @@
 .idea/
-cameras/HERO4/__pycache__/
-cameras/videos/
+goprolib/HERO4/__pycache__/
+goprolib/videos
+dist/
+build/
+goprolib.egg-info/

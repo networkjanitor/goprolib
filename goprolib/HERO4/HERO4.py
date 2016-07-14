@@ -1,14 +1,15 @@
-import requests
-import re
 import os
 import os.path
+import re
 import urllib.request
-import aenum
 
-import cameras.HERO4.enum.exceptions as gp_exceptions
-import cameras.HERO4.enum.settings as gp_settings
-import cameras.HERO4.enum.status as gp_stats
-import cameras.HERO4.enum.commands as gp_commands
+import aenum
+import goprolib.HERO4.exceptions as gp_exceptions
+import goprolib.HERO4.settings as gp_settings
+import goprolib.HERO4.status as gp_stats
+import requests
+
+import goprolib.HERO4.commands as gp_commands
 
 
 class HERO4:
@@ -305,9 +306,12 @@ class HERO4:
             self._command_api(gp_commands.Cmd.GPCAMERA_SHUTTER.format(0))
 
 
-if __name__ == '__main__':
+def main():
     h4 = HERO4()
     h4.autoconfigure()
     h4.watch_status()
     # h4.dump_all()
     # h4.download_all(path='/media/xyoz/XYOZ-INT1000E/Pictures/2016_07_ScriptedTimelapseExperiments')
+
+if __name__ == '__main__':
+    main()
