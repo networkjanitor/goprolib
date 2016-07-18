@@ -2,6 +2,7 @@ import os
 import os.path
 import re
 import urllib.request
+import http.client
 
 import aenum
 import goprolib.HERO4.exceptions as gp_exceptions
@@ -264,6 +265,12 @@ class HERO4:
             with urllib.request.urlopen(url) as resp, open(directory + file, 'wb') as f:
                 data = resp.read()
                 f.write(data)
+                if delete_after_download:
+                    self.delete(gp_filepath)
+        except http.client.IncompleteRead as e:
+            print('IncompleteRead at ' + directory + file)
+            with open(directory + file, 'wb') as f:
+                f.write(e.partial)
                 if delete_after_download:
                     self.delete(gp_filepath)
         except Exception as e:
