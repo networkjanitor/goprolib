@@ -65,7 +65,7 @@ def lookup(key, value=None):
                 # Search for the class which has the key name as class name (lower case)
                 # The can only be one class with the name
                 found_value_class = inspect.getmembers(key_lookup, predicate=lambda elem:
-                _nested_name_predicate(elem, key_lookup.name.lower()))
+                                                        _nested_name_predicate(elem,key_lookup.name.lower()))
                 try:
                     value_lookup = _find(value, found_value_class[0][1])
                     # If such class exists and the value is found within it, return results for key and value
@@ -498,7 +498,7 @@ class MultiShot(aenum.Enum):
         SEC_3_PHOTO_30 = 7
         SEC_6_PHOTO_30 = 8
 
-    CONTINUOUS_RATE = 29
+    BURST_RATE = 29
 
     # noinspection PyPep8Naming
     @aenum.skip

@@ -2390,3 +2390,1693 @@ Modes:
 			Options:
 				Display Name: 480 1:2 Subsample
 				Value: 6
+
+Filters
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 1		resolution.UHD_4K
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 0		video_format.NTSC
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 10		fps.FPS_24
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 4		resolution.HD_2_7K
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 0		video_format.NTSC
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 7		resolution.HD_1440
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 0		video_format.NTSC
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 9		resolution.HD_1080
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 0		video_format.NTSC
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 8		resolution.HD_1080_SuperView
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 0		video_format.NTSC
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 10		resolution.HD_960
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 0		video_format.NTSC
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 10		fps.FPS_24
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 12		Unknown
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 0		video_format.NTSC
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 10		fps.FPS_24
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 11		resolution.HD_720_SuperView
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 0		video_format.NTSC
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 10		fps.FPS_24
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 13		resolution.WVGA
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 0		video_format.NTSC
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 10		fps.FPS_24
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 1		resolution.UHD_4K
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 1		video_format.PAL
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 10		fps.FPS_24
+			Setting Value: 11		fps.FPS_15
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 4		resolution.HD_2_7K
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 1		video_format.PAL
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 7		resolution.HD_1440
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 1		video_format.PAL
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 9		resolution.HD_1080
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 1		video_format.PAL
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 8		resolution.HD_1080_SuperView
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 1		video_format.PAL
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 10		resolution.HD_960
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 1		video_format.PAL
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 10		fps.FPS_24
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 12		Unknown
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 1		video_format.PAL
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 10		fps.FPS_24
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 11		resolution.HD_720_SuperView
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 1		video_format.PAL
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 10		fps.FPS_24
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 13		resolution.WVGA
+		Setting ID: 57			Setup.VIDEO_FORMAT:
+			Setting Value: 1		video_format.PAL
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 10		fps.FPS_24
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 1		resolution.UHD_4K
+	Blacklist:
+		Setting ID: 4			Video.FOV:
+			Setting Value: 1		fov.MEDIUM
+			Setting Value: 2		fov.NARROW
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 4		resolution.HD_2_7K
+	Blacklist:
+		Setting ID: 4			Video.FOV:
+			Setting Value: 2		fov.NARROW
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 7		resolution.HD_1440
+	Blacklist:
+		Setting ID: 4			Video.FOV:
+			Setting Value: 1		fov.MEDIUM
+			Setting Value: 2		fov.NARROW
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 8		resolution.HD_1080_SuperView
+	Blacklist:
+		Setting ID: 4			Video.FOV:
+			Setting Value: 1		fov.MEDIUM
+			Setting Value: 2		fov.NARROW
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 10		resolution.HD_960
+	Blacklist:
+		Setting ID: 4			Video.FOV:
+			Setting Value: 1		fov.MEDIUM
+			Setting Value: 2		fov.NARROW
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 11		resolution.HD_720_SuperView
+	Blacklist:
+		Setting ID: 4			Video.FOV:
+			Setting Value: 1		fov.MEDIUM
+			Setting Value: 2		fov.NARROW
+
+	Activated by:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 13		resolution.WVGA
+	Blacklist:
+		Setting ID: 4			Video.FOV:
+			Setting Value: 1		fov.MEDIUM
+			Setting Value: 2		fov.NARROW
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 0		current_sub_mode.VIDEO
+	Blacklist:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 2		resolution.UHD_4K_SUPER_VIEW
+			Setting Value: 3		Unknown
+			Setting Value: 5		resolution.HD_2_7K_SUPER_VIEW
+			Setting Value: 6		resolution.HD_2_7K_4_3
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+	Blacklist:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 1		resolution.UHD_4K
+			Setting Value: 2		resolution.UHD_4K_SUPER_VIEW
+			Setting Value: 3		Unknown
+			Setting Value: 4		resolution.HD_2_7K
+			Setting Value: 5		resolution.HD_2_7K_SUPER_VIEW
+			Setting Value: 6		resolution.HD_2_7K_4_3
+			Setting Value: 8		resolution.HD_1080_SuperView
+			Setting Value: 10		resolution.HD_960
+			Setting Value: 11		resolution.HD_720_SuperView
+			Setting Value: 13		resolution.WVGA
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 3		current_sub_mode.LOOPING
+	Blacklist:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 2		resolution.UHD_4K_SUPER_VIEW
+			Setting Value: 3		Unknown
+			Setting Value: 5		resolution.HD_2_7K_SUPER_VIEW
+			Setting Value: 6		resolution.HD_2_7K_4_3
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 7		resolution.HD_1440
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 9		resolution.HD_1080
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 8		resolution.HD_1080_SuperView
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 11		resolution.HD_720_SuperView
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 10		fps.FPS_24
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 12		Unknown
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 10		fps.FPS_24
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 12		Unknown
+		Setting ID: 3			Video.FPS:
+			Setting Value: 5		fps.FPS_60
+	Blacklist:
+		Setting ID: 4			Video.FOV:
+			Setting Value: 0		fov.WIDE
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 1		current_sub_mode.TIMELAPSE_VIDEO
+	Blacklist:
+		Setting ID: 8			Video.LOW_LIGHT:
+			Setting Value: 0		low_light.OFF
+			Setting Value: 1		low_light.ON
+
+	Activated by:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+	Blacklist:
+		Setting ID: 8			Video.LOW_LIGHT:
+			Setting Value: 0		low_light.OFF
+			Setting Value: 1		low_light.ON
+
+	Activated by:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 8		fps.FPS_30
+	Blacklist:
+		Setting ID: 8			Video.LOW_LIGHT:
+			Setting Value: 0		low_light.OFF
+			Setting Value: 1		low_light.ON
+
+	Activated by:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 9		fps.FPS_25
+	Blacklist:
+		Setting ID: 8			Video.LOW_LIGHT:
+			Setting Value: 0		low_light.OFF
+			Setting Value: 1		low_light.ON
+
+	Activated by:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 10		fps.FPS_24
+	Blacklist:
+		Setting ID: 8			Video.LOW_LIGHT:
+			Setting Value: 0		low_light.OFF
+			Setting Value: 1		low_light.ON
+
+	Activated by:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 11		fps.FPS_15
+	Blacklist:
+		Setting ID: 8			Video.LOW_LIGHT:
+			Setting Value: 0		low_light.OFF
+			Setting Value: 1		low_light.ON
+
+	Activated by:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 12		fps.FPS_12_5
+	Blacklist:
+		Setting ID: 8			Video.LOW_LIGHT:
+			Setting Value: 0		low_light.OFF
+			Setting Value: 1		low_light.ON
+
+	Activated by:
+		Setting ID: 10			Video.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 11			Video.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+			Setting Value: 1		protune_white_balance.WB_3000K
+			Setting Value: 2		protune_white_balance.WB_5500K
+			Setting Value: 3		protune_white_balance.WB_6500K
+			Setting Value: 4		protune_white_balance.NATIVE
+
+	Activated by:
+		Setting ID: 10			Video.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 12			Video.PROTUNE_COLOR:
+			Setting Value: 0		protune_color.GOPRO_COLOR
+			Setting Value: 1		protune_color.FLAT
+
+	Activated by:
+		Setting ID: 10			Video.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 14			Video.PROTUNE_SHARPNESS:
+			Setting Value: 0		protune_sharpness.HIGH
+			Setting Value: 1		protune_sharpness.MEDIUM
+			Setting Value: 2		protune_sharpness.LOW
+
+	Activated by:
+		Setting ID: 10			Video.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 13			Video.PROTUNE_ISO:
+			Setting Value: 0		protune_iso.ISO_6400
+			Setting Value: 1		protune_iso.ISO_1600
+			Setting Value: 2		protune_iso.ISO_400
+			Setting Value: 3		protune_iso.ISO_3200
+			Setting Value: 4		protune_iso.ISO_800
+
+	Activated by:
+		Setting ID: 10			Video.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 15			Video.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 0		current_sub_mode.VIDEO
+	Blacklist:
+		Setting ID: 5			Video.TIMELAPSE_RATE:
+			Setting Value: 0		timelapse_rate.SEC_0_5
+			Setting Value: 1		timelapse_rate.SEC_1
+			Setting Value: 2		timelapse_rate.SEC_2
+			Setting Value: 3		timelapse_rate.SEC_5
+			Setting Value: 4		timelapse_rate.SEC_10
+			Setting Value: 5		timelapse_rate.SEC_30
+			Setting Value: 6		timelapse_rate.SEC_60
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 0		current_sub_mode.VIDEO
+	Blacklist:
+		Setting ID: 6			Video.LOOPING:
+			Setting Value: 0		looping.MAXIMUM
+			Setting Value: 1		looping.MIN_5
+			Setting Value: 2		looping.MIN_20
+			Setting Value: 3		looping.MIN_60
+			Setting Value: 4		looping.MIN_120
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 0		current_sub_mode.VIDEO
+	Blacklist:
+		Setting ID: 7			Video.PIV:
+			Setting Value: 0		Unknown
+			Setting Value: 1		piv.SEC_5
+			Setting Value: 2		piv.SEC_10
+			Setting Value: 3		piv.SEC_30
+			Setting Value: 4		piv.SEC_60
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 1		current_sub_mode.TIMELAPSE_VIDEO
+	Blacklist:
+		Setting ID: 6			Video.LOOPING:
+			Setting Value: 0		looping.MAXIMUM
+			Setting Value: 1		looping.MIN_5
+			Setting Value: 2		looping.MIN_20
+			Setting Value: 3		looping.MIN_60
+			Setting Value: 4		looping.MIN_120
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 1		current_sub_mode.TIMELAPSE_VIDEO
+	Blacklist:
+		Setting ID: 7			Video.PIV:
+			Setting Value: 0		Unknown
+			Setting Value: 1		piv.SEC_5
+			Setting Value: 2		piv.SEC_10
+			Setting Value: 3		piv.SEC_30
+			Setting Value: 4		piv.SEC_60
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+	Blacklist:
+		Setting ID: 6			Video.LOOPING:
+			Setting Value: 0		looping.MAXIMUM
+			Setting Value: 1		looping.MIN_5
+			Setting Value: 2		looping.MIN_20
+			Setting Value: 3		looping.MIN_60
+			Setting Value: 4		looping.MIN_120
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+	Blacklist:
+		Setting ID: 5			Video.TIMELAPSE_RATE:
+			Setting Value: 0		timelapse_rate.SEC_0_5
+			Setting Value: 1		timelapse_rate.SEC_1
+			Setting Value: 2		timelapse_rate.SEC_2
+			Setting Value: 3		timelapse_rate.SEC_5
+			Setting Value: 4		timelapse_rate.SEC_10
+			Setting Value: 5		timelapse_rate.SEC_30
+			Setting Value: 6		timelapse_rate.SEC_60
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 3		current_sub_mode.LOOPING
+	Blacklist:
+		Setting ID: 7			Video.PIV:
+			Setting Value: 0		Unknown
+			Setting Value: 1		piv.SEC_5
+			Setting Value: 2		piv.SEC_10
+			Setting Value: 3		piv.SEC_30
+			Setting Value: 4		piv.SEC_60
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 3		current_sub_mode.LOOPING
+	Blacklist:
+		Setting ID: 5			Video.TIMELAPSE_RATE:
+			Setting Value: 0		timelapse_rate.SEC_0_5
+			Setting Value: 1		timelapse_rate.SEC_1
+			Setting Value: 2		timelapse_rate.SEC_2
+			Setting Value: 3		timelapse_rate.SEC_5
+			Setting Value: 4		timelapse_rate.SEC_10
+			Setting Value: 5		timelapse_rate.SEC_30
+			Setting Value: 6		timelapse_rate.SEC_60
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 1		current_sub_mode.TIMELAPSE_VIDEO
+	Blacklist:
+		Setting ID: 4			Video.FOV:
+			Setting Value: 0		fov.WIDE
+			Setting Value: 1		fov.MEDIUM
+			Setting Value: 2		fov.NARROW
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 1		current_sub_mode.TIMELAPSE_VIDEO
+	Blacklist:
+		Setting ID: 9			Video.SPOT_METER:
+			Setting Value: 0		spot_meter.OFF
+			Setting Value: 1		spot_meter.ON
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 1		current_sub_mode.TIMELAPSE_VIDEO
+	Blacklist:
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 2		resolution.UHD_4K_SUPER_VIEW
+			Setting Value: 3		Unknown
+			Setting Value: 4		resolution.HD_2_7K
+			Setting Value: 5		resolution.HD_2_7K_SUPER_VIEW
+			Setting Value: 7		resolution.HD_1440
+			Setting Value: 8		resolution.HD_1080_SuperView
+			Setting Value: 9		resolution.HD_1080
+			Setting Value: 10		resolution.HD_960
+			Setting Value: 11		resolution.HD_720_SuperView
+			Setting Value: 12		Unknown
+			Setting Value: 13		resolution.WVGA
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 1		current_sub_mode.TIMELAPSE_VIDEO
+	Blacklist:
+		Setting ID: 3			Video.FPS:
+			Setting Value: 0		fps.FPS_240
+			Setting Value: 1		fps.FPS_120
+			Setting Value: 2		fps.FPS_100
+			Setting Value: 3		fps.FPS_90
+			Setting Value: 4		fps.FPS_80
+			Setting Value: 5		fps.FPS_60
+			Setting Value: 6		fps.FPS_50
+			Setting Value: 7		fps.FPS_48
+			Setting Value: 8		fps.FPS_30
+			Setting Value: 9		fps.FPS_25
+			Setting Value: 10		fps.FPS_24
+			Setting Value: 11		fps.FPS_15
+			Setting Value: 12		fps.FPS_12_5
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 0		current_sub_mode.BURST
+	Blacklist:
+		Setting ID: 18			Photo.CONTINUOUS_RATE:
+			Setting Value: 0		continuous_rate.FRAMES_3_SECOND_1
+			Setting Value: 1		continuous_rate.FRAMES_5_SECOND_1
+			Setting Value: 2		continuous_rate.FRAMES_10_SECOND_1
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 0		current_sub_mode.BURST
+	Blacklist:
+		Setting ID: 19			Photo.EXPOSURE_TIME:
+			Setting Value: 0		exposure_time.AUTO
+			Setting Value: 1		exposure_time.SEC_2
+			Setting Value: 2		exposure_time.SEC_5
+			Setting Value: 3		exposure_time.SEC_10
+			Setting Value: 4		exposure_time.SEC_15
+			Setting Value: 5		exposure_time.SEC_20
+			Setting Value: 6		exposure_time.SEC_30
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 1		current_sub_mode.TIMELAPSE
+	Blacklist:
+		Setting ID: 19			Photo.EXPOSURE_TIME:
+			Setting Value: 0		exposure_time.AUTO
+			Setting Value: 1		exposure_time.SEC_2
+			Setting Value: 2		exposure_time.SEC_5
+			Setting Value: 3		exposure_time.SEC_10
+			Setting Value: 4		exposure_time.SEC_15
+			Setting Value: 5		exposure_time.SEC_20
+			Setting Value: 6		exposure_time.SEC_30
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.NIGHTLAPSE
+	Blacklist:
+		Setting ID: 18			Photo.CONTINUOUS_RATE:
+			Setting Value: 0		continuous_rate.FRAMES_3_SECOND_1
+			Setting Value: 1		continuous_rate.FRAMES_5_SECOND_1
+			Setting Value: 2		continuous_rate.FRAMES_10_SECOND_1
+
+	Activated by:
+		Setting ID: 21			Photo.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 22			Photo.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+			Setting Value: 1		protune_white_balance.WB_3000K
+			Setting Value: 2		protune_white_balance.WB_5500K
+			Setting Value: 3		protune_white_balance.WB_6500K
+			Setting Value: 4		protune_white_balance.NATIVE
+
+	Activated by:
+		Setting ID: 21			Photo.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 23			Photo.PROTUNE_COLOR:
+			Setting Value: 0		protune_color.GOPRO_COLOR
+			Setting Value: 1		protune_color.FLAT
+
+	Activated by:
+		Setting ID: 21			Photo.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 25			Photo.PROTUNE_SHARPNESS:
+			Setting Value: 0		protune_sharpness.HIGH
+			Setting Value: 1		protune_sharpness.MEDIUM
+			Setting Value: 2		protune_sharpness.LOW
+
+	Activated by:
+		Setting ID: 21			Photo.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 24			Photo.PROTUNE_ISO:
+			Setting Value: 0		protune_iso.ISO_800
+			Setting Value: 1		protune_iso.ISO_400
+			Setting Value: 2		protune_iso.ISO_200
+			Setting Value: 3		protune_iso.ISO_100
+
+	Activated by:
+		Setting ID: 21			Photo.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 26			Photo.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.NIGHTLAPSE
+		Setting ID: 19			Photo.EXPOSURE_TIME:
+			Setting Value: 1		exposure_time.SEC_2
+	Blacklist:
+		Setting ID: 22			Photo.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.NIGHTLAPSE
+		Setting ID: 19			Photo.EXPOSURE_TIME:
+			Setting Value: 2		exposure_time.SEC_5
+	Blacklist:
+		Setting ID: 22			Photo.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.NIGHTLAPSE
+		Setting ID: 19			Photo.EXPOSURE_TIME:
+			Setting Value: 3		exposure_time.SEC_10
+	Blacklist:
+		Setting ID: 22			Photo.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.NIGHTLAPSE
+		Setting ID: 19			Photo.EXPOSURE_TIME:
+			Setting Value: 4		exposure_time.SEC_15
+	Blacklist:
+		Setting ID: 22			Photo.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.NIGHTLAPSE
+		Setting ID: 19			Photo.EXPOSURE_TIME:
+			Setting Value: 5		exposure_time.SEC_20
+	Blacklist:
+		Setting ID: 22			Photo.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.NIGHTLAPSE
+		Setting ID: 19			Photo.EXPOSURE_TIME:
+			Setting Value: 6		exposure_time.SEC_30
+	Blacklist:
+		Setting ID: 22			Photo.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.NIGHTLAPSE
+		Setting ID: 19			Photo.EXPOSURE_TIME:
+			Setting Value: 1		exposure_time.SEC_2
+	Blacklist:
+		Setting ID: 26			Photo.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.NIGHTLAPSE
+		Setting ID: 19			Photo.EXPOSURE_TIME:
+			Setting Value: 2		exposure_time.SEC_5
+	Blacklist:
+		Setting ID: 26			Photo.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.NIGHTLAPSE
+		Setting ID: 19			Photo.EXPOSURE_TIME:
+			Setting Value: 3		exposure_time.SEC_10
+	Blacklist:
+		Setting ID: 26			Photo.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.NIGHTLAPSE
+		Setting ID: 19			Photo.EXPOSURE_TIME:
+			Setting Value: 4		exposure_time.SEC_15
+	Blacklist:
+		Setting ID: 26			Photo.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.NIGHTLAPSE
+		Setting ID: 19			Photo.EXPOSURE_TIME:
+			Setting Value: 5		exposure_time.SEC_20
+	Blacklist:
+		Setting ID: 26			Photo.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 69			MultiShot.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.NIGHTLAPSE
+		Setting ID: 19			Photo.EXPOSURE_TIME:
+			Setting Value: 6		exposure_time.SEC_30
+	Blacklist:
+		Setting ID: 26			Photo.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 0		Unknown
+	Blacklist:
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 0		exposure_time.AUTO
+			Setting Value: 1		exposure_time.SEC_2
+			Setting Value: 2		exposure_time.SEC_5
+			Setting Value: 3		exposure_time.SEC_10
+			Setting Value: 4		exposure_time.SEC_15
+			Setting Value: 5		exposure_time.SEC_20
+			Setting Value: 6		exposure_time.SEC_30
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 0		Unknown
+	Blacklist:
+		Setting ID: 30			MultiShot.TIMELAPSE_RATE:
+			Setting Value: 0		timelapse_rate.SEC_0_5
+			Setting Value: 1		timelapse_rate.SEC_1
+			Setting Value: 2		timelapse_rate.SEC_2
+			Setting Value: 5		timelapse_rate.SEC_5
+			Setting Value: 10		timelapse_rate.SEC_10
+			Setting Value: 30		timelapse_rate.SEC_30
+			Setting Value: 60		timelapse_rate.SEC_60
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 0		Unknown
+	Blacklist:
+		Setting ID: 32			MultiShot.NIGHTLAPSE_RATE:
+			Setting Value: 0		nightlapse_rate.CONTINUOUS
+			Setting Value: 4		nightlapse_rate.SEC_4
+			Setting Value: 5		nightlapse_rate.SEC_5
+			Setting Value: 10		nightlapse_rate.SEC_10
+			Setting Value: 15		nightlapse_rate.SEC_15
+			Setting Value: 20		nightlapse_rate.SEC_20
+			Setting Value: 30		nightlapse_rate.SEC_30
+			Setting Value: 60		nightlapse_rate.SEC_60
+			Setting Value: 120		nightlapse_rate.SEC_120
+			Setting Value: 300		nightlapse_rate.SEC_300
+			Setting Value: 1800		nightlapse_rate.SEC_1800
+			Setting Value: 3600		nightlapse_rate.SEC_3600
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 1		Unknown
+	Blacklist:
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 0		exposure_time.AUTO
+			Setting Value: 1		exposure_time.SEC_2
+			Setting Value: 2		exposure_time.SEC_5
+			Setting Value: 3		exposure_time.SEC_10
+			Setting Value: 4		exposure_time.SEC_15
+			Setting Value: 5		exposure_time.SEC_20
+			Setting Value: 6		exposure_time.SEC_30
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 1		Unknown
+	Blacklist:
+		Setting ID: 29			MultiShot.BURST_RATE:
+			Setting Value: 0		burst_rate.SEC_1_PHOTO_3
+			Setting Value: 1		burst_rate.SEC_1_PHOTO_5
+			Setting Value: 2		burst_rate.SEC_1_PHOTO_10
+			Setting Value: 3		burst_rate.SEC_2_PHOTO_10
+			Setting Value: 4		burst_rate.SEC_3_PHOTO_10
+			Setting Value: 5		burst_rate.SEC_1_PHOTO_30
+			Setting Value: 6		burst_rate.SEC_2_PHOTO_30
+			Setting Value: 7		burst_rate.SEC_3_PHOTO_30
+			Setting Value: 8		burst_rate.SEC_6_PHOTO_30
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 1		Unknown
+	Blacklist:
+		Setting ID: 32			MultiShot.NIGHTLAPSE_RATE:
+			Setting Value: 0		nightlapse_rate.CONTINUOUS
+			Setting Value: 4		nightlapse_rate.SEC_4
+			Setting Value: 5		nightlapse_rate.SEC_5
+			Setting Value: 10		nightlapse_rate.SEC_10
+			Setting Value: 15		nightlapse_rate.SEC_15
+			Setting Value: 20		nightlapse_rate.SEC_20
+			Setting Value: 30		nightlapse_rate.SEC_30
+			Setting Value: 60		nightlapse_rate.SEC_60
+			Setting Value: 120		nightlapse_rate.SEC_120
+			Setting Value: 300		nightlapse_rate.SEC_300
+			Setting Value: 1800		nightlapse_rate.SEC_1800
+			Setting Value: 3600		nightlapse_rate.SEC_3600
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+	Blacklist:
+		Setting ID: 29			MultiShot.BURST_RATE:
+			Setting Value: 0		burst_rate.SEC_1_PHOTO_3
+			Setting Value: 1		burst_rate.SEC_1_PHOTO_5
+			Setting Value: 2		burst_rate.SEC_1_PHOTO_10
+			Setting Value: 3		burst_rate.SEC_2_PHOTO_10
+			Setting Value: 4		burst_rate.SEC_3_PHOTO_10
+			Setting Value: 5		burst_rate.SEC_1_PHOTO_30
+			Setting Value: 6		burst_rate.SEC_2_PHOTO_30
+			Setting Value: 7		burst_rate.SEC_3_PHOTO_30
+			Setting Value: 8		burst_rate.SEC_6_PHOTO_30
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+	Blacklist:
+		Setting ID: 30			MultiShot.TIMELAPSE_RATE:
+			Setting Value: 0		timelapse_rate.SEC_0_5
+			Setting Value: 1		timelapse_rate.SEC_1
+			Setting Value: 2		timelapse_rate.SEC_2
+			Setting Value: 5		timelapse_rate.SEC_5
+			Setting Value: 10		timelapse_rate.SEC_10
+			Setting Value: 30		timelapse_rate.SEC_30
+			Setting Value: 60		timelapse_rate.SEC_60
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 1		exposure_time.SEC_2
+	Blacklist:
+		Setting ID: 35			MultiShot.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 2		exposure_time.SEC_5
+	Blacklist:
+		Setting ID: 35			MultiShot.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 3		exposure_time.SEC_10
+	Blacklist:
+		Setting ID: 35			MultiShot.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 4		exposure_time.SEC_15
+	Blacklist:
+		Setting ID: 35			MultiShot.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 5		exposure_time.SEC_20
+	Blacklist:
+		Setting ID: 35			MultiShot.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 6		exposure_time.SEC_30
+	Blacklist:
+		Setting ID: 35			MultiShot.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 2		exposure_time.SEC_5
+	Blacklist:
+		Setting ID: 32			MultiShot.NIGHTLAPSE_RATE:
+			Setting Value: 4		nightlapse_rate.SEC_4
+			Setting Value: 5		nightlapse_rate.SEC_5
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 3		exposure_time.SEC_10
+	Blacklist:
+		Setting ID: 32			MultiShot.NIGHTLAPSE_RATE:
+			Setting Value: 4		nightlapse_rate.SEC_4
+			Setting Value: 5		nightlapse_rate.SEC_5
+			Setting Value: 10		nightlapse_rate.SEC_10
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 4		exposure_time.SEC_15
+	Blacklist:
+		Setting ID: 32			MultiShot.NIGHTLAPSE_RATE:
+			Setting Value: 4		nightlapse_rate.SEC_4
+			Setting Value: 5		nightlapse_rate.SEC_5
+			Setting Value: 10		nightlapse_rate.SEC_10
+			Setting Value: 15		nightlapse_rate.SEC_15
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 5		exposure_time.SEC_20
+	Blacklist:
+		Setting ID: 32			MultiShot.NIGHTLAPSE_RATE:
+			Setting Value: 4		nightlapse_rate.SEC_4
+			Setting Value: 5		nightlapse_rate.SEC_5
+			Setting Value: 10		nightlapse_rate.SEC_10
+			Setting Value: 15		nightlapse_rate.SEC_15
+			Setting Value: 20		nightlapse_rate.SEC_20
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 6		exposure_time.SEC_30
+	Blacklist:
+		Setting ID: 32			MultiShot.NIGHTLAPSE_RATE:
+			Setting Value: 4		nightlapse_rate.SEC_4
+			Setting Value: 5		nightlapse_rate.SEC_5
+			Setting Value: 10		nightlapse_rate.SEC_10
+			Setting Value: 15		nightlapse_rate.SEC_15
+			Setting Value: 20		nightlapse_rate.SEC_20
+			Setting Value: 30		nightlapse_rate.SEC_30
+
+	Activated by:
+		Setting ID: 34			MultiShot.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 35			MultiShot.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+			Setting Value: 1		protune_white_balance.WB_3000K
+			Setting Value: 2		protune_white_balance.WB_5500K
+			Setting Value: 3		protune_white_balance.WB_6500K
+			Setting Value: 4		protune_white_balance.NATIVE
+
+	Activated by:
+		Setting ID: 34			MultiShot.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 36			MultiShot.PROTUNE_COLOR:
+			Setting Value: 0		protune_color.GOPRO_COLOR
+			Setting Value: 1		protune_color.FLAT
+
+	Activated by:
+		Setting ID: 34			MultiShot.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 38			MultiShot.PROTUNE_SHARPNESS:
+			Setting Value: 0		protune_sharpness.HIGH
+			Setting Value: 1		protune_sharpness.MEDIUM
+			Setting Value: 2		protune_sharpness.LOW
+
+	Activated by:
+		Setting ID: 34			MultiShot.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 37			MultiShot.PROTUNE_ISO:
+			Setting Value: 0		protune_iso.ISO_800
+			Setting Value: 1		protune_iso.ISO_400
+			Setting Value: 2		protune_iso.ISO_200
+			Setting Value: 3		protune_iso.ISO_100
+
+	Activated by:
+		Setting ID: 34			MultiShot.PROTUNE:
+			Setting Value: 0		protune.OFF
+	Blacklist:
+		Setting ID: 39			MultiShot.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 1		exposure_time.SEC_2
+	Blacklist:
+		Setting ID: 39			MultiShot.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 2		exposure_time.SEC_5
+	Blacklist:
+		Setting ID: 39			MultiShot.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 3		exposure_time.SEC_10
+	Blacklist:
+		Setting ID: 39			MultiShot.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 4		exposure_time.SEC_15
+	Blacklist:
+		Setting ID: 39			MultiShot.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 5		exposure_time.SEC_20
+	Blacklist:
+		Setting ID: 39			MultiShot.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 70			Unknown:
+			Setting Value: 2		Unknown
+		Setting ID: 31			MultiShot.EXPOSURE_TIME:
+			Setting Value: 6		exposure_time.SEC_30
+	Blacklist:
+		Setting ID: 39			MultiShot.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 1		current_sub_mode.TIMELAPSE_VIDEO
+	Blacklist:
+		Setting ID: 10			Video.PROTUNE:
+			Setting Value: 0		protune.OFF
+			Setting Value: 1		protune.ON
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 1		current_sub_mode.TIMELAPSE_VIDEO
+	Blacklist:
+		Setting ID: 11			Video.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+			Setting Value: 1		protune_white_balance.WB_3000K
+			Setting Value: 2		protune_white_balance.WB_5500K
+			Setting Value: 3		protune_white_balance.WB_6500K
+			Setting Value: 4		protune_white_balance.NATIVE
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 1		current_sub_mode.TIMELAPSE_VIDEO
+	Blacklist:
+		Setting ID: 12			Video.PROTUNE_COLOR:
+			Setting Value: 0		protune_color.GOPRO_COLOR
+			Setting Value: 1		protune_color.FLAT
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 1		current_sub_mode.TIMELAPSE_VIDEO
+	Blacklist:
+		Setting ID: 14			Video.PROTUNE_SHARPNESS:
+			Setting Value: 0		protune_sharpness.HIGH
+			Setting Value: 1		protune_sharpness.MEDIUM
+			Setting Value: 2		protune_sharpness.LOW
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 1		current_sub_mode.TIMELAPSE_VIDEO
+	Blacklist:
+		Setting ID: 13			Video.PROTUNE_ISO:
+			Setting Value: 0		protune_iso.ISO_6400
+			Setting Value: 1		protune_iso.ISO_1600
+			Setting Value: 2		protune_iso.ISO_400
+			Setting Value: 3		protune_iso.ISO_3200
+			Setting Value: 4		protune_iso.ISO_800
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 1		current_sub_mode.TIMELAPSE_VIDEO
+	Blacklist:
+		Setting ID: 15			Video.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+		Setting ID: 2			Video.RESOLUTION:
+			Setting Value: 12		Unknown
+		Setting ID: 3			Video.FPS:
+			Setting Value: 5		fps.FPS_60
+	Blacklist:
+		Setting ID: 4			Video.FOV:
+			Setting Value: 0		fov.WIDE
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+	Blacklist:
+		Setting ID: 10			Video.PROTUNE:
+			Setting Value: 0		protune.OFF
+			Setting Value: 1		protune.ON
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+	Blacklist:
+		Setting ID: 11			Video.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+			Setting Value: 1		protune_white_balance.WB_3000K
+			Setting Value: 2		protune_white_balance.WB_5500K
+			Setting Value: 3		protune_white_balance.WB_6500K
+			Setting Value: 4		protune_white_balance.NATIVE
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+	Blacklist:
+		Setting ID: 12			Video.PROTUNE_COLOR:
+			Setting Value: 0		protune_color.GOPRO_COLOR
+			Setting Value: 1		protune_color.FLAT
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+	Blacklist:
+		Setting ID: 14			Video.PROTUNE_SHARPNESS:
+			Setting Value: 0		protune_sharpness.HIGH
+			Setting Value: 1		protune_sharpness.MEDIUM
+			Setting Value: 2		protune_sharpness.LOW
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+	Blacklist:
+		Setting ID: 13			Video.PROTUNE_ISO:
+			Setting Value: 0		protune_iso.ISO_6400
+			Setting Value: 1		protune_iso.ISO_1600
+			Setting Value: 2		protune_iso.ISO_400
+			Setting Value: 3		protune_iso.ISO_3200
+			Setting Value: 4		protune_iso.ISO_800
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 2		current_sub_mode.VIDEO_AND_PHOTO
+	Blacklist:
+		Setting ID: 15			Video.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 3		current_sub_mode.LOOPING
+	Blacklist:
+		Setting ID: 10			Video.PROTUNE:
+			Setting Value: 0		protune.OFF
+			Setting Value: 1		protune.ON
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 3		current_sub_mode.LOOPING
+	Blacklist:
+		Setting ID: 11			Video.PROTUNE_WHITE_BALANCE:
+			Setting Value: 0		protune_white_balance.AUTO
+			Setting Value: 1		protune_white_balance.WB_3000K
+			Setting Value: 2		protune_white_balance.WB_5500K
+			Setting Value: 3		protune_white_balance.WB_6500K
+			Setting Value: 4		protune_white_balance.NATIVE
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 3		current_sub_mode.LOOPING
+	Blacklist:
+		Setting ID: 12			Video.PROTUNE_COLOR:
+			Setting Value: 0		protune_color.GOPRO_COLOR
+			Setting Value: 1		protune_color.FLAT
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 3		current_sub_mode.LOOPING
+	Blacklist:
+		Setting ID: 14			Video.PROTUNE_SHARPNESS:
+			Setting Value: 0		protune_sharpness.HIGH
+			Setting Value: 1		protune_sharpness.MEDIUM
+			Setting Value: 2		protune_sharpness.LOW
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 3		current_sub_mode.LOOPING
+	Blacklist:
+		Setting ID: 13			Video.PROTUNE_ISO:
+			Setting Value: 0		protune_iso.ISO_6400
+			Setting Value: 1		protune_iso.ISO_1600
+			Setting Value: 2		protune_iso.ISO_400
+			Setting Value: 3		protune_iso.ISO_3200
+			Setting Value: 4		protune_iso.ISO_800
+
+	Activated by:
+		Setting ID: 68			Video.CURRENT_SUB_MODE:
+			Setting Value: 3		current_sub_mode.LOOPING
+	Blacklist:
+		Setting ID: 15			Video.PROTUNE_EV:
+			Setting Value: 0		protune_ev.PLUS_2
+			Setting Value: 1		protune_ev.PLUS_1_5
+			Setting Value: 2		protune_ev.PLUS_1
+			Setting Value: 3		protune_ev.PLUS_0_5
+			Setting Value: 4		protune_ev.ZERO
+			Setting Value: 5		protune_ev.MINUS_0_5
+			Setting Value: 6		protune_ev.MINUS_1
+			Setting Value: 7		protune_ev.MINUS_1_5
+			Setting Value: 8		protune_ev.MINUS_2
+
+	Activated by:
+		Setting ID: 53			Setup.DEFAULT_APP_MODE:
+			Setting Value: 0		default_app_mode.VIDEO
+	Blacklist:
+		Setting ID: 16			Photo.DEFAULT_SUB_MODE:
+			Setting Value: 0		default_sub_mode.SINGLE
+			Setting Value: 1		default_sub_mode.CONTINUOUS
+			Setting Value: 2		default_sub_mode.NIGHT
+
+	Activated by:
+		Setting ID: 53			Setup.DEFAULT_APP_MODE:
+			Setting Value: 0		default_app_mode.VIDEO
+	Blacklist:
+		Setting ID: 27			MultiShot.DEFAULT_SUB_MODE:
+			Setting Value: 0		default_sub_mode.BURST
+			Setting Value: 1		default_sub_mode.TIMELAPSE
+			Setting Value: 2		default_sub_mode.NIGHTLAPSE
+
+	Activated by:
+		Setting ID: 53			Setup.DEFAULT_APP_MODE:
+			Setting Value: 1		default_app_mode.PHOTO
+	Blacklist:
+		Setting ID: 1			Video.DEFAULT_SUB_MODE:
+			Setting Value: 0		default_sub_mode.VIDEO
+			Setting Value: 1		default_sub_mode.TIMELAPSE_VIDEO
+			Setting Value: 2		default_sub_mode.VIDEO_AND_PHOTO
+			Setting Value: 3		default_sub_mode.LOOPING
+
+	Activated by:
+		Setting ID: 53			Setup.DEFAULT_APP_MODE:
+			Setting Value: 1		default_app_mode.PHOTO
+	Blacklist:
+		Setting ID: 27			MultiShot.DEFAULT_SUB_MODE:
+			Setting Value: 0		default_sub_mode.BURST
+			Setting Value: 1		default_sub_mode.TIMELAPSE
+			Setting Value: 2		default_sub_mode.NIGHTLAPSE
+
+	Activated by:
+		Setting ID: 53			Setup.DEFAULT_APP_MODE:
+			Setting Value: 2		default_app_mode.MULTI_SHOT
+	Blacklist:
+		Setting ID: 1			Video.DEFAULT_SUB_MODE:
+			Setting Value: 0		default_sub_mode.VIDEO
+			Setting Value: 1		default_sub_mode.TIMELAPSE_VIDEO
+			Setting Value: 2		default_sub_mode.VIDEO_AND_PHOTO
+			Setting Value: 3		default_sub_mode.LOOPING
+
+	Activated by:
+		Setting ID: 53			Setup.DEFAULT_APP_MODE:
+			Setting Value: 2		default_app_mode.MULTI_SHOT
+	Blacklist:
+		Setting ID: 16			Photo.DEFAULT_SUB_MODE:
+			Setting Value: 0		default_sub_mode.SINGLE
+			Setting Value: 1		default_sub_mode.CONTINUOUS
+			Setting Value: 2		default_sub_mode.NIGHT

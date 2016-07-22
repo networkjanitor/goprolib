@@ -23,7 +23,7 @@ class Cmd(aenum.Constant):
     GPCAMERA_DELETE_LAST_FILE_ID = '/command/storage/delete/last'
     GPCAMERA_DELETE_ALL_FILES_ID = '/command/storage/delete/all'
     GPCAMERA_DELETE_FILE_ID = '/command/storage/delete?p={}'
-    GPCAMERA_LOCATE_ID = '/command/system/locate'
+    GPCAMERA_LOCATE_ID = '/command/system/locate?p={}'
     GPCAMERA_NETWORK_NAME_ID = '/command/wireless/ap/ssid'
     GPCAMERA_AP_CONTROL = '/command/wireless/ap/control'
     GPCAMERA_INFO_VERSION_ID = 'camera_version'
@@ -36,3 +36,5 @@ class Cmd(aenum.Constant):
     GPCAMERA_SSID_LIST = '/command/wireless/ssid/list'
     GPCAMERA_SSID_SELECT = '/command/wireless/ssid/select'
     GPCAMERA_SSID_DELETE = '/command/wireless/ssid/delete'
+
+    GPCAMERA_STREAM = '/execute?p1=gpStream&c1={}' # start, stop, restart
