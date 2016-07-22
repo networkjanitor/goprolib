@@ -9,7 +9,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='goprolib',
-    version='0.3.3',
+    version='0.4.3',
     description='A library for communicating with GoPro Cameras (currently supported: HERO4)',
     long_description=long_description,
 
